@@ -13,3 +13,5 @@ This is just a copy of that disc.<br />
 - Eyestar Mail
 - Ulead Photo Express 4.0 SE
 - Instruction Manual
+
+![disc photo](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/blob/main/it_works_wow.png?raw=true)
