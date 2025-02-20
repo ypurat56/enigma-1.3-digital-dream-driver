@@ -7,7 +7,8 @@ Got my hands on this camera, but couldn't find any drivers for it(official site 
 Hope it helps some people that still want to use this camera.<br />
 This is just a copy of that disc.<br />
 
-## Better download [archive](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/releases/download/1.0.0/enigma-1.3-digital-dream-driver.zip) from release page 
+# Better download [archive](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/releases/download/1.0.0/Enigma1_3_driver.zip) from release page
+github lfs messed up with big files(.cab), so it breaks if u just download from code :/ 
 ## To use just run `CDSETUP.exe`
 
 ### Installer also includes:
