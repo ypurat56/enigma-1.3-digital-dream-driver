@@ -1,0 +1,49 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\ClassMap\{5C2E7E96-0B46-4b7e-9DB7-A3CE646E2655}]
+"ClassName"="CiModePhoneMgrCat"
+"DebugDLL"="iModeComD.dll"
+"ReleaseDLL"="iModeCom.dll"
+
+//[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\ClassMap\{6C2E7E96-0B46-4b7e-9DB7-A3CE646E2655}]
+//"ClassName"="IMgrCat"
+//"DebugDLL"="CatMgrD.dll"
+//"ReleaseDLL"="CatMgr.dll"
+
+// iModePhone Help
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Help\iMode]
+"ID_CREATE_STI_IMODE"="41153"
+"ID_CREATE_ANI_IMODE"="41154"
+"IDD_IMODE_MGRPNL"="161"
+"IDD_IMODE_CROPDLG"="162"
+"IDD_IMODE_EFFOPTDLG"="163"
+"IDD_IMODE_PHONEDLG"="164"
+"IDD_IMODE_FRAMEDLG"="165"
+"IDD_IMODE_TEXTDLG"="168"
+"IDD_IMODE_PROPDLG"="169"
+"IDD_IMODE_OUTPUTDLG"="170"
+"IDD_IMODE_EFFOPTMGRPNL"="171"
+"IDD_IMODE_ANIMATEDLG"="172"
+"IDD_IMODE_SAVEDLG"="173"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// iModePhone
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// iModePhone ClassMap.reg
+// The following should add to ClasMap.reg
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\ClassMap\{72683AFC-0093-4b21-A564-9B4446694160}]
+"ClassName"="CiModePhoneMgrPnl"
+"DebugDLL"="iModeStiD.dll"
+"ReleaseDLL"="iModeSti.dll"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Animation iModePhone
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// iModePhone ClassMap.reg
+// The following should add to ClasMap.reg
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\ClassMap\{5B6D2C69-E598-4b16-AEAC-C29C2521F50A}]
+"ClassName"="CiModePhoneAniMgrPnl"
+"DebugDLL"="iModeAniD.dll"
+"ReleaseDLL"="iModeAni.dll"

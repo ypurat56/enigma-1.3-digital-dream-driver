@@ -1,0 +1,8 @@
+<update>
+
+	<installer product="Reader" 
+				URL="http://update.adobe.com/pub/adobe/acrobatreader/win/5.x/ar500fra.xml" 
+				build="2001110800" date="11-08-2001" version="5.0"
+	/>
+
+</update>

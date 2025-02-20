@@ -1,0 +1,82 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\3D Folding Projects]
+"Display Name"="3D立体プロジェクト"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\3D Folding Projects\Others]
+"Display Name"="その他"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Album Scrapbook]
+"Display Name"="Albumスクラップブック"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Album Scrapbook\Album Covers]
+"Display Name"="アルバムの表紙"
+
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank]
+"Display Name"="ブランク"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank\3D Folding Projects]
+"Display Name"="3D立体プロジェクト"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank\Labels]
+"Display Name"="ラベル"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business]
+"Display Name"="ビジネス"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business\Business Cards]
+"Display Name"="名刺"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business\Certificates]
+"Display Name"="証明書"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards]
+"Display Name"="カード"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards]
+"Display Name"="グリーティングカード"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards\Anniversary]
+"Display Name"="記念日"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards\Season's Greeting]
+"Display Name"="見舞い"
+
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards]
+"Display Name"="ホリデーカード"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards\Easter]
+"Display Name"="イースター"
+
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards\Thanksgiving]
+"Display Name"="届け物の返事"
+
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff]
+"Display Name"="おまけ"
+
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff\Certificates(Kid)]
+"Display Name"="証明書(子供)"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff\Guest Name Cards]
+"Display Name"="ゲストネームカード"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion]
+"Display Name"="プロモーション"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion\Poster]
+"Display Name"="ポスター"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion\Poster\General]
+"Display Name"="一般"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery]
+"Display Name"="ステーショナリー"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery\Labels]
+"Display Name"="ラベル"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery\Labels\CD Labels]
+"Display Name"="CDラベル"
+

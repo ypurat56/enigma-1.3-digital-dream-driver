@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Adobe&reg; SVG Viewer</TITLE>
+<STYLE TYPE="TEXT/CSS"> BODY {background-color: white; margin: 20pt; font-size: 12px; line-height: 18px; font-family: Arial, Sans-Serif} H1, H2 {color: black} H3 {color: red} .H3I {margin-left: 1em} P {text-align: justify}
+</STYLE>
+</HEAD>
+<BODY link="#cc0000" alink="#cc0000" vlink="#996666">
+<CENTER>
+<H1>Adobe<SUP>&reg;</SUP> SVG Viewer pour Windows</H1>
+<H2>Notes de publication</H2>
+<H3>Version 2.0 (Build 55, 3/14/01)</H3>
+</CENTER>
+<H2>Sommaire</H2>
+<UL>
+<LI><A HREF="#about">A propos de SVG Viewer</A>
+<LI><A HREF="#sysreq">Configuration syst&egrave;me requise</A>
+<LI><A HREF="#installing">Comment installer SVG Viewer</A>
+<LI><A HREF="#copyplugin">Comment copier les modules externes de Netscape dans d'autres navigateurs</A>
+<LI><A HREF="#viewing">Comment visualiser des fichiers SVG dans votre navigateur Web</A>
+<LI><A HREF="#converting">Comment convertir des illustrations en fichiers SVG</A>
+<LI><A HREF="#tips">Conseils</A>
+<LI><A HREF="#problems">Probl&egrave;mes connus</A>
+<LI><A HREF="#history">Historique des r&eacute;visions</A>
+<LI><A HREF="#contact">Contacts</A>
+<LI><A HREF="#copyright">Copyright</A>
+<LI><A HREF="http://www.adobe.com/svg/">Informations suppl&eacute;mentaires sur l'assistance Adobe pour les fichiers SVG</A>
+</UL>
+<P><HR>
+<H2><A NAME="about"></A>A propos de SVG Viewer</H2>
+<P>Adobe SVG Viewer prend en charge la plus grande partie de la proposition de sp&eacute;cification <a href="http://www.w3.org/TR/2000/CR-SVG-20001102/index.html">Candidate Recommendation</a> relative aux fichiers SVG, publi&eacute;e le 2/11/00. Veuillez garder &agrave; l'esprit que cette sp&eacute;cification est en cours de d&eacute;veloppement et qu'elle risque donc d'&ecirc;tre modifi&eacute;e tant que le statut de recommandation ne lui aura pas &eacute;t&eacute; attribu&eacute;.
+<H2><A NAME="installing"></A>Comment installer SVG Viewer</H2>
+<P><OL>
+<LI>Avant de commencer l'installation, veuillez fermer toutes les applications que vous avez utilis&eacute;es pour visualiser des fichiers SVG avec une ancienne version du programme de visualisation.
+<LI>Ex&eacute;cutez le programme d'installation. Les versions les plus r&eacute;centes du programme d'installation peuvent &ecirc;tre t&eacute;l&eacute;charg&eacute;es depuis le site <a href="http://www.adobe.com/svg/viewer/install">http://www.adobe.com/svg/viewer/install</a>.
+</OL>
+<H2><A NAME="copyplugin"></A>Comment copier les modules externes Netscape dans d'autres navigateurs</H2>
+<P>Si vous installez une autre copie de Netscape prise en charge par le module externe de Netscape, vous pouvez copier les fichiers suivants dans votre dossier de modules externes afin de visualiser les fichiers SVG depuis ce navigateur&nbsp;:
+<UL>
+<LI>NPSVGVw.dll
+<LI>SVGView.dll
+<LI>SVGViewer.zip
+</UL>
+<H2><A NAME="viewing"></A>Comment visualiser des fichiers SVG dans votre navigateur Web</H2>
+<P>Une fois Adobe SVG Viewer install&eacute;, vous devriez pouvoir visualiser tous les fichiers SVG export&eacute;s depuis Illustrator dans tous les navigateurs Web pris en charge.</P>
+<H2><A NAME="converting"></A>Comment convertir des illustrations en fichiers SVG</H2>
+<P>Il est possible d'exporter des fichiers SVG depuis Illustrator 9. Vous pouvez ainsi cr&eacute;er votre illustration dans Illustrator, l'exporter en tant que fichier SVG, puis lui ajouter manuellement des effets filtrants, des animations ou une interactivit&eacute; JavaScript.</P>
+<H2><A NAME="tips">Conseils</H2>
+<UL>
+<LI>Le rendu des attributs de style (ou attributs de style utilisant des r&eacute;f&eacute;rences &agrave; des entit&eacute;s) est plus rapide que celui des feuilles de style incorpor&eacute;es.
+<LI>Attribuez des pourcentages serr&eacute;s aux attributs de <code>hauteur</code> et de <code>largeur</code> <code>x</code>, <code>y</code> des &eacute;l&eacute;ments <code>filtrants</code> afin de r&eacute;duire la zone sur laquelle l'effet filtrant est calcul&eacute;. Ceci permet d'acc&eacute;l&eacute;rer l'affichage graphique.
+<li>Vous pouvez r&eacute;cup&eacute;rer l'objet document SVG depuis les gestionnaires d'&eacute;v&eacute;nements SVG en appelant <code>getTarget</code> pour l'objet <code>evt</code> pass&eacute;. Par exemple&nbsp;: <pre>
+  // Pour r&eacute;cup&eacute;rer l'objet document SVG&nbsp;:
+  var directTarget = evt.getTarget();
+  var svgDocument;
+  if( directTarget.getNodeType() != 9 )  // if not DOCUMENT_NODE
+    svgDocument = directTarget.getOwnerDocument();
+  else
+    svgDocument = directTarget;
+</pre>
+</UL>
+<P><HR>
+<H2><A NAME="sysreq"></A>Configuration syst&egrave;me requise</H2>
+<UL>
+<LI>Windows 95, 98, 2000 ou NT 4.0
+<LI>Netscape Navigator ou Communicator, version 4.0 - 4.75, ou Internet Explorer, version 4.0 ou ult&eacute;rieure. Netscape 6 <emph>n'est pas</emph> pris en charge.
+<LI>13 Mo d'espace disque
+<LI>32 Mo de m&eacute;moire RAM (recommand&eacute;)
+</UL>
+<P><HR>
+<H2><A NAME="problems"></A>Probl&egrave;mes connus avec SVG Viewer</H2>
+<H3><A NAME="problems_all"></A>Dans tous les navigateurs</H3>
+<OL>
+<li>Il est possible que des &eacute;l&eacute;ments situ&eacute;s pr&egrave;s du bord d'un graphique SVG ne re&ccedil;oivent pas un &eacute;v&eacute;nement mouseout.
+</OL>
+<H3><A NAME="problems_ie"></A>Dans Internet Explorer</H3>
+<OL>
+<li>Internet Explorer, version 4 ou ult&eacute;rieure, doit &ecirc;tre install&eacute; sur votre ordinateur pour que vous puissiez utiliser SVG Viewer comme contr&ocirc;le ActiveX dans d'autres applications (Microsoft Office, par exemple).
+<li>Si vous ouvrez plusieurs fen&ecirc;tres contenant un lien vers un m&ecirc;me fichier SVG et que ce fichier SVG est incorpor&eacute; &agrave; l'aide de la balise HTML &lt;embed&gt;, il est possible que, lorsque vous imprimez une de ces fen&ecirc;tres, l'impression soit r&eacute;alis&eacute;e en fonction des modifications apport&eacute;es au DOM dans l'autre fen&ecirc;tre. Ce probl&egrave;me est caus&eacute; par les limitations d'Internet Explorer.
+<li>Les limitations d'Internet Explorer vous emp&ecirc;chent &eacute;galement de visualiser les propri&eacute;t&eacute;s d'autres fen&ecirc;tres depuis un script d&eacute;fini dans un fichier SVG.
+<li>Le module externe Adobe SVG Netscape <b>n'est pas</b> pris en charge par Internet Explorer sous Windows.
+</OL>
+<H3><A NAME="problems_nn"></A>Dans Netscape</H3>
+<OL>
+<li><!--ABTS#392459-->Les modules externes Netscape 4.x ne peuvent pas ex&eacute;cuter les scripts <code>onunload</code> car l'environnement du script du module externe est d&eacute;j&agrave; interrompu lorsque le module externe re&ccedil;oit la notification de t&eacute;l&eacute;chargement envoy&eacute;e par Netscape.
+<li><!--ABTS#390346-->Netscape 6.0 signale des erreurs lors de l'impression de pages avec des modules externes. L'impression du contenu incorpor&eacute; &eacute;choue ensuite. Netscape signale deux alertes d'erreur de module externe. Si vous choisissez d'ignorer les alertes signal&eacute;es, Netscape imprime la page HTML, mais la zone correspondant au contenu SVG reste vide.
+<li>Lorsque vous quittez une page Web, Netscape parvient souvent &agrave; t&eacute;l&eacute;charger le module externe Adobe SVG Viewer avant de fermer tous les scripts ex&eacute;cut&eacute;s dans le fichier HTML. Vous devez donc faire attention lors de l'&eacute;criture de scripts de v&eacute;rification de charge du module externe avant de tenter d'acc&eacute;der au DOM SVG &agrave; partir des rappels <code>setTimeout</code> ou <code>setInterval</code> dans votre JavaScript HTML.
+<li>Evitez d'utiliser la formule suivante &agrave; cause des limitations de Netscape&nbsp;: <pre>
+  &lt;a href="#" onclick="myScriptWhichModifiesSVG()"&gt;
+</pre>
+<p>En effet, JavaScript r&eacute;agit &agrave; l'&eacute;v&eacute;nement onclick et commence &agrave; ex&eacute;cuter le script. Cependant, Netscape r&eacute;agit lui-aussi au clic effectu&eacute; sur un lien et interrompt le chargement de la page active par JavaScript, ce qui cr&eacute;&eacute; un probl&egrave;me. Ce conflit peut &ecirc;tre &eacute;vit&eacute; en r&eacute;&eacute;crivant le code de la fa&ccedil;on indiqu&eacute;e ci-dessous&nbsp;: <pre>
+  &lt;a href="javascript:myScriptWhichModifiesSVG()"&gt;
+</pre>
+<li><!--ABTS#364416-->Si un gestionnaire d'&eacute;v&eacute;nement JavaScript contient une erreur, l'ex&eacute;cution de tous les JavaScript ult&eacute;rieurs &eacute;choue. Ceci est d&ucirc; &agrave; un bogue dans le traitement par Netscape des scripts ex&eacute;cut&eacute;s par les modules externes.
+<li>Les limitations de Netscape en mati&egrave;re de scripts vous emp&ecirc;chent de modifier l'URL d'un autre cadre depuis un gestionnaire d'&eacute;v&eacute;nement SVG.
+<li>A cause des limitations de Netscape en mati&egrave;re de moteur de script, l'appel de la fonction <code>alert()</code> depuis un gestionnaire d'&eacute;v&eacute;nement SVG risque de ne pas fonctionner et d'entra&icirc;ner la non-ex&eacute;cution de JavaScript ult&eacute;rieurs. Des probl&egrave;mes similaires se produisent pour toutes les fen&ecirc;tres modales Netscape, y compris la fen&ecirc;tre des privil&egrave;ges de s&eacute;curit&eacute;. Ce bogue semble avoir &eacute;t&eacute; partiellement r&eacute;solu par Netscape dans Netscape 4.75, mais pas sous Windows 98.
+<li><!--ABTS#392481-->Il existe un bogue dans Netscape concernant les modules externes qui utilisent JavaScript. Si vous chargez une page avec un module externe utilisant JavaScript, puis d&eacute;sactivez Java et quittez le navigateur, Netscape se bloque.
+<li><!--ABTS#389988-->Netscape ne vous permet pas toujours d'acc&eacute;der au tableau <code>document.embeds[]</code> depuis un script SVG. Pour corriger ce probl&egrave;me, utilisez <code>document.mySVG</code> lorsque votre objet incorpor&eacute; se nomme <code>mySVG</code>.
+<li><!--ABTS#364417-->Les erreurs de scripts ex&eacute;cut&eacute;s par les modules externes Netscape 4.x ne s'affichent pas dans la fen&ecirc;tre de la console Javascript.
+<li><!--ABTS#364461-->Netscape 4.x subit une l&eacute;g&egrave;re fuite de m&eacute;moire chaque fois qu'un module externe ex&eacute;cute un script.
+<li><!--ABTS#364524-->Netscape 4.x se bloque au moment de la fermeture si vous l'avez lanc&eacute; en cliquant deux fois pour charger une page Web contenant des &eacute;l&eacute;ments du module externe LiveConnect.
+<li>Si dans Netscape, vous utilisez la fonction d'aper&ccedil;u avant impression sur une page contenant des modules externes (comme par exemple Adobe SVG Viewer), Netscape se bloque. Pour une raison similaire, Netscape se bloque lorsque vous tentez d'imprimer une page contenant des modules externes avec Acrobat Distiller.
+<li>Si vous utilisez Netscape 4.0x pour visualiser un m&ecirc;me fichier SVG dans deux fen&ecirc;tres diff&eacute;rentes et que ce fichier utilise une fonction globale de JavaScript sur l'objet de la fen&ecirc;tre, il peut arriver que l'initialisation de JavaScript &eacute;choue dans la seconde fen&ecirc;tre. La solution consiste &agrave; mettre Netscape &agrave; niveau avec une version plus r&eacute;cente.
+<li>Un bogue de Netscape 6 entra&icirc;ne l'affichage du menu contextuel de Netscape 6 lorsque vous cliquez avec le bouton droit de la souris au sein de la zone SVG pour en afficher le menu contextuel.
+</OL>
+<P><HR>
+<H2><A NAME="history"></A>Historique des r&eacute;visions</H2>
+<h3>Modifications apport&eacute;es &agrave; Adobe SVG Viewer depuis la version 1.0</h3>
+<ul>
+<li>El&eacute;ments et attributs&nbsp;:
+<ul>
+<li>Ajout de la prise en charge des &eacute;l&eacute;ments suivants&nbsp;: <code>altGlyph</code>, <code>altGlyphDef</code>, <code>font</code>, <code>font-face</code>, <code>glyph</code>, <code>glyphRef</code>, <code>hkern</code>, <code>missing-glyph</code>, <code>mpath</code>, <code>pattern</code> et <code>vkern</code>.
+<li>Ajout de la prise en charge des attributs de pr&eacute;sentation SVG.
+<li>Fin de la prise en charge de l'&eacute;l&eacute;ment <code>use</code> et utilisation des &eacute;l&eacute;ments<code>symbol</code>.
+<li>Ajout de la prise en charge de l'attribut <code>spreadMethod</code> pour les d&eacute;grad&eacute;s.
+<li>Ajout de la prise en charge du nouvel attribut <code>primitiveUnits</code> pour les effets filtrants.
+<li>Ajout de la prise en charge du mode "discret" pour <code>feComponentTransfer</code>.
+</ul>
+<li>Propri&eacute;t&eacute;s des CSS&nbsp;:
+<ul>
+<li>Ajout de la prise en charge des propri&eacute;t&eacute;s des CSS suivantes&nbsp;: <code>alignment-baseline</code>, <code>color-interpolation</code>, <code>direction</code>, <code>dominant-baseline</code>, <code>flood-color</code>, <code>flood-opacity</code>, <code>kerning</code>, <code>lighting-color</code>, <code>pointer-events</code> et <code>unicode-bidi</code>. La prise en charge de la propri&eacute;t&eacute; <code>pointer-events</code> ne comprend pas la prise en charge de la transparence pour les &eacute;l&eacute;ments pixellis&eacute;s.
+<li>Ajout de la prise en charge de la propri&eacute;t&eacute; <code>font-variant</code>, mais uniquement lorsque celle-ci est appliqu&eacute;e &agrave; des polices SVG.
+<li>Suppression de la prise en charge de la propri&eacute;t&eacute; <code>baseline-identifier</code>, remplac&eacute;e par la propri&eacute;t&eacute; <code>alignment-baseline</code> dans la sp&eacute;cification la plus r&eacute;cente.
+<li>Modification des valeurs par d&eacute;faut des propri&eacute;t&eacute;s <code>clip-rule</code> et <code>fill-rule</code>, les faisant passer de <code>even-odd</code> &agrave; <code>non-zero</code> de fa&ccedil;on &agrave; refl&eacute;ter les modifications figurant dans la sp&eacute;cification la plus r&eacute;cente.
+<li>La plus r&eacute;cente proposition de sp&eacute;cification Candidate Recommendation relative aux SVG modifie le traitement des unit&eacute;s CSS. Elles sont d&eacute;sormais converties pour l'espace utilisateur au moment de l'analyse plut&ocirc;t qu'&agrave; l'affichage, ce qui modifie &eacute;norm&eacute;ment le fonctionnement de la commande Zoom.
+</ul>
+<li>DOM&nbsp;:
+<ul>
+<li>La prise en charge du second niveau DOM du Viewer est d&eacute;sormais conforme &agrave; la sp&eacute;cification Candidate Release relative au DOM 2, &agrave; l'exception de l'interface <code>keyEvent</code> qui n'est pas sp&eacute;cifi&eacute;e dans le document DOM 2 Candidate Release. La prise en charge de l'interface <code>keyEvent</code> est conforme &agrave; la derni&egrave;re version DOM 2 publi&eacute;e de cette interface figurant dans la proposition de sp&eacute;cification 9/99.
+<li>Ajout de la prise en charge de l'interface <code>SVGRect</code>.
+<li>Ajout de la prise en charge de l'interface <code>SVGPoint</code>, &agrave; l'exception de la m&eacute;thode <code>matrixTransform</code>.
+<li>Ajout de la prise en charge de l'interface <code>SVGTextContentElement</code>, &agrave; l'exception des propri&eacute;t&eacute;s <code>getTextLength</code> et <code>getLengthAdjust</code>.
+<li>Ajout de la prise en charge de <code>rootElement</code>, <code>getRootElement</code>, <code>currentScale</code>, <code>getCurrentScale</code>, <code>setCurrentScale</code>, <code>currentTranslate</code>, <code>getCurrentTranslate</code> et <code>setCurrentTranslate</code> pour l'interface <code>SVGDocument</code>.
+<li>Ajout de la prise en charge des m&eacute;thodes DOM2 <code>hasAttribute</code> et <code>hasAttributeNS</code> pour l'interface <code>Element</code>.
+<li>Ajout de la prise en charge d'une nouvelle m&eacute;thode non standard pour l'objet <code>Document</code>, intitul&eacute;e <code>garbageCollect</code>. Cette m&eacute;thode n'accepte aucun param&egrave;tre et ne renvoie aucun r&eacute;sultat. Le recours &agrave; cette m&eacute;thode permet de lib&eacute;rer les objets Node supprim&eacute;s pr&eacute;c&eacute;demment de l'arborescence. Si un script a r&eacute;alis&eacute; une op&eacute;ration entra&icirc;nant la suppression d'un noeud de l'arborescence, le script devrait appeler <code>garbageCollect</code> pour le document SVG lorsqu'il n'a plus usage du noeud supprim&eacute; (et retourn&eacute;). Une fois l'appel r&eacute;alis&eacute;, toutes les r&eacute;f&eacute;rences d'un script &agrave; un noeud ne faisant pas partie du document au moment de l'appel de <code>garbageCollect</code> &eacute;choueront lors de l'acc&egrave;s &agrave; ses m&eacute;thodes. Ceci ne concerne que les navigateurs Netscape dans la mesure o&ugrave; aucune prise en charge minime des r&eacute;f&eacute;rences n'est offerte par LiveConnect de Netscape. Pour une prise en charge multiplate-formes facilit&eacute;e, cet appel peut &ecirc;tre r&eacute;alis&eacute; sous Internet Explorer, mais il n'aura aucun r&eacute;sultat sur cette plate-forme.
+</ul>
+<li>Autres modifications&nbsp;:
+<ul>
+<li>Pour &ecirc;tre conforme aux propositions les plus r&eacute;centes de la sp&eacute;cification Candidate Recommendation relative aux SVG, la prise en charge des unit&eacute;s <code>userSpace</code> a &eacute;t&eacute; supprim&eacute;e.
+<li>Ajout de la prise en charge des feuilles de style utilisateur. SVG Viewer recherche un fichier nomm&eacute; <code>SVG-User-Styles.css</code>, conform&eacute;ment &agrave; la strat&eacute;gie de recherche suivante&nbsp;:
+<p><table align="center" width="70%">
+<tr><td align="center" bgcolor="#EEEEEE">Syst&egrave;me d'exploitation</td><td align="center" bgcolor="#EEEEEE" colspan="2">Chemins recherch&eacute;s</td></tr>
+<tr><td valign="top">Windows 2000</td><td><ol>
+<li>Mes documents
+<li>\Documents And Settings\&lt;utilisateur&gt;\Application Data
+<li>\Documents And Settings\&lt;utilisateur&gt;\Local Settings\Application Data
+<li>\Documents And Settings\All Users\Application Data
+</ol></td></tr>
+<tr><td valign="top">Windows 98</td><td><ol>
+<li>Mes documents
+</ol></td></tr>
+<tr><td valign="top">Windows NT</td><td><ol>
+<li>\WINNT\Profiles\&lt;utilisateur&gt;\Personnel
+<li>\WINNT\Profiles\&lt;utilisateur&gt;\Donn&eacute;es d'applications
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 8.x</td><td><ol>
+<li>Dossier Syst&egrave;me:Pr&eacute;f&eacute;rences
+<li>Volume D&eacute;marrage:Documents
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(utilisateur unique)</td><td><ol>
+<li>Dossier Syst&egrave;me:Pr&eacute;f&eacute;rences
+<li>Dossier Syst&egrave;me:Utilisateurs:&lt;utilisateur&gt;
+<li>Volume D&eacute;marrage:Documents
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(multiutilisateur)</td><td><ol>
+<li>Volume D&eacute;marrage:Utilisateurs:&lt;utilisateur&gt;:Pr&eacute;f&eacute;rences
+<li>Volume D&eacute;marrage:Documents
+</ol></td></tr>
+</table>
+<li>Adobe SVG Viewer incorpore d&eacute;sormais une prise en charge de la gestion des couleurs. Cette prise en charge tente de localiser un profil de p&eacute;riph&eacute;rique adapt&eacute; &agrave; votre affichage. Si un logiciel de gestion des couleurs est install&eacute; sur votre ordinateur et qu'un profil &eacute;cran a &eacute;t&eacute; s&eacute;lectionn&eacute;, ce profil &eacute;cran est &eacute;galement utilis&eacute; par Viewer. Si votre ordinateur n'est pas dot&eacute; de la gestion des couleurs ou si elle est d&eacute;sactiv&eacute;e, Viewer recherche le profil Param&egrave;tres du moniteur d'Adobe dans votre syst&egrave;me. Ce profil est cr&eacute;&eacute; par l'outil Adobe Gamma (install&eacute; avec les autres produits Adobe) et est g&eacute;n&eacute;ralement stock&eacute; dans le m&ecirc;me dossier que les autres profils couleur sur le syst&egrave;me h&ocirc;te. Si Viewer ne r&eacute;ussit pas &agrave; trouver un profil de p&eacute;riph&eacute;rique appropri&eacute;, il utilise le profil sRGB standard pour tous les rendus.
+<li>Le module externe Netscape prend maintenant en charge l'acc&egrave;s DOM des clients Java.
+<li>Le contr&ocirc;le ActiveX prend d&eacute;sormais en charge les gestionnaires d'&eacute;v&eacute;nements autres que JavaScript (Visual Basic, par exemple).
+<li>Modifications pour l'obtention de la compatibilit&eacute; Windows 2000.
+<li>Ajout d'une m&eacute;thode clavier alternative plus accessible pour r&eacute;aliser un panorama des graphiques SVG. Si le d&eacute;filement est d&eacute;sactiv&eacute;, les touches de direction r&eacute;alisent un panoramique du graphique SVG activ&eacute;.
+<li>Am&eacute;lioration des performances en cas de pr&eacute;sence d'animations multiples et simultan&eacute;es au sein d'un m&ecirc;me fichier SVG. Les fichiers SVG dot&eacute;s de petites animations simultan&eacute;es tr&egrave;s espac&eacute;es s'affichent en g&eacute;n&eacute;ral plus rapidement dans la version actuelle que dans la version 1.0.
+<li>Am&eacute;lioration des performances du module externe Mac.
+<li>Am&eacute;lioration de la prise en charge des textes verticaux.
+<li>Ajout de la prise en charge des textes bidirectionnels.
+<li>Optimisation des performances g&eacute;n&eacute;rales.
+<li>Modification de <code>feImage</code> de fa&ccedil;on &agrave; ce qu'il fonctionne comme l'&eacute;l&eacute;ment <code>use</code>.
+<li>Mise &agrave; jour de la prise en charge des images PNG.
+<li>Optimisation de l'utilisation de la m&eacute;moire.
+<li>Ajout de la prise en charge des chemins d'acc&egrave;s aux animations.
+</ul>
+</ul>
+<P><HR>
+<H2><A NAME="contact"></A>Contacts</H2>
+<P>Pour signaler des bogues et/ou faire des suggestions, consultez la <A HREF="http://www.adobe.com/svg/">zone SVG</A> sur le site Adobe.com.
+<H2><A NAME="copyright"></A>Copyright</H2>
+<P>&copy; Copyright 1998-2001 d&eacute;tenu par Adobe Systems Incorporated. Tous droits r&eacute;serv&eacute;s.
+<P>Adobe et Illustrator sont des marques d'Adobe Systems Incorporated. Windows et Windows NT sont des marques de Microsoft Corporation, d&eacute;pos&eacute;es aux Etats-Unis et/ou dans d'autres pays. Mac OS et TrueType sont des marques d'Apple Computer, Inc., d&eacute;pos&eacute;es aux Etats-Unis et/ou dans d'autres pays. Toutes les autres marques cit&eacute;es sont la propri&eacute;t&eacute; de leurs d&eacute;tenteurs respectifs.
+</BODY>
+</HTML>

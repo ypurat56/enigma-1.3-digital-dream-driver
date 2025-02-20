@@ -1,0 +1,26 @@
+Ulead Systems Inc.
+Accordo di Licenza con l'Utente Finale
+AVVERTENZA ALL'UTENTE: QUESTO E' UN CONTRATTO. INSTALLANDO QUESTO SOFTWARE, SI ACCETTANO I TERMINI E LE CONDIZIONI DI QUESTO ACCORDO DI LICENZA.
+.  
+
+1. Diritti di Proprietà Intellettuale: Questo programma di software (il "Software") è protetto da copyright ed è un prodotto di proprietà della Ulead Systems, Inc. Il Software è protetto anche dalla Legge per i Copyright degli Stati Uniti d'America e dalle disposizioni del Trattato internazionale.  I marchi devono essere usati in accordo con la pratica accettata riguardante i  marchi, compresa l'identificazione del nome del proprietario del marchio.  I marchi possono venire usati soltanto per identificare prodotti stampati prodotti dal Software.  Tale uso di un marchio non dà diritto di proprietà in quel marchio.  Eccetto per quanto stabilito qui sopra, questo Accordo non concede nessun diritto di proprietà intellettuale sopra questo Software.
+
+2. Uso del Software: E' Lecito:(1) usare il Software su ciascun computer singolo, purchè il Software sia in uso solo su un computer per volta.  Il software è " in uso" su un computer quando è caricato nella memoria temporanea(cioè RAM) o installato nella memoria permanente (cioè hard disk) di quel computer. (2) fare una copia singola del Software solamente allo scopo di backup o di archivio. (3) trasferire in permanenza tutti i diritti di usare il Software ad un'altra persona o ente legale purchè vengano trasferiti questo Accordo, il Software e tutti i materiali scritti che l'accompagnano, e alla condizione che il trasferente non conservi copie del Software o materiali scritti e che l'altra parte sia d'accordo con i termini di questo Accordo di Licenza.  Non è Lecito: (1) fare o far fare qualsiasi forma di copia, digitale, stampata, fotografica o altro, del Software, eccetto che per incorporare detto Software nel materiale sullo schermo o stampato. (2) mettere o far mettere il Software su una bacheca elettronica o su altra forma di servizio online. (3) usare o far usare il Software in qualsiasi forma di pornografia, o in qualsiasi altra materia diffamante in qualsivoglia maniera persone o ditte in qualsiasi immagine, o che implichi qualsiasi forma di approvazione da parte del Software, dei suoi fornitori, licenzianti, o qualsiasi altra persona o ente descritto nel Software . (4) lavorare a rovescio, decompilare o smontare o in altro modo cercare di scoprire il codice di origine del Software. (5) modificare, adattare, tradurre, dare in affitto, in lease, in prestito o creare dei lavori derivati dal Software. (6) esportare il Software in qualsiasi forma senza le dovute licenze degli Stati Uniti e del governo straniero.
+
+3. Termine: Questa Licenza continua per tutto il tempo che si usa il Software, eccetto che venga a terminare per la mancata osservanza dei termini o condizioni di questo Accordo.  Quando venisse a terminare,o per porre termine all'Accordo, l'utente si impegna a distruggere l'originale e le altre copie del Software.  
+
+4. Garanzia Limitata:
+ULEAD E I SUOI FORNITORI NON GRANTISCONO E NON POSSONO GARANTIRE LA RESA O I RISULTATI CHE SI POSSONO OTTENERE USANDO IL SOFTWARE O GLI ARTICOLI CHE L'ACCOMPAGNANO.  QUANTO SOPRA DEFINISCE LE UNICHE ED ESCLUSIVE RESPONSABILITÀ DI ULEAD O DEI SUOI FORNITORI IN CASO DI VIOLAZIONE DI GARANZIA.  ECCETTO CHE PER LA GARANZIA ESPRESSAMENTE DICHIARATA QUI SOPRA, ULEAD NON CONCEDE ALTRE GARANZIE, ESPRESSE O IMPLICITE, RIGUARDANTI IL NON INFRINGIMENTO DEI DIRITTI DI TERZI, LA COMMERCIABILITÀ O L'IDONEITÀ PER UN QUALCHE SCOPO PARTICOLARE.  NESSUNA INFORMAZIONE O CONSIGLIO ORALE O SCRITTO DATO DALLA ULEAD, DAI SUOI RIVENDITORI, AGENTI O IMPIEGATI POTRÀ CREARE UNA GARANZIA.  Certi stati non permettono le esclusioni o la limitazione delle garanzie implicite, per cui le suddette esclusioni e/o limitazioni non si applicano in quei casi.
+
+5. Limitazione di Responsabilità:
+IN NESSUN CASO LA ULEAD SARÀ RESPONSABILE PER QUALSIASI DANNO, COMPRESA LA PERDITA DI PROFITTI, O ALTRO DANNO SECONDARIO O CONSEGUENTE, DERIVANTE DALL'USO O INCAPACITÀ AD USARE IL SOFTWARE O I MATERIALI SCRITTI, ANCHE SE ULEAD È STATA INFORMATA DELLA POSSIBILITÀ DI TALE DANNO.  Certi stati o certe legislazioni non permettono l'esclusione o la limitazione dei danni secondari, conseguenti o speciali, per cui le suddette limitazioni potrebbero non essere applicabili in quei casi.
+
+6. Clausole Varie:
+Questo Accordo è governato dalle leggi dello Stato della California.  Se qualche disposizione di questo Accordo fosse illegale, invalida, o per qualsiasi ragione non rispettabile, tale disposizione verrà considerata tolta da questo Accordo e non influirà sulla validità e rispettabilità delle altre disposizioni di questo Accordo.  Questo Accordo Questo Accordo è l'esposizione completa dell'accordo e sostituisce qualsiasi proposta o comunicazione precedente fra noi relativa alla materia di questo Accordo.  Se l'utente ha delle domande riguardanti questo Accordo, può contattare Ulead ad uno degli indirizzi indicati qui sotto.
+
+
+Ulead Systems, Inc.
+International				http://www.ulead.com
+America del Nord e del Sud			http://www.ulead.com
+Giappone					http://www.ulead.co.jp
+Europa					http://www.ulead.de

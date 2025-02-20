@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Adobe&reg; SVG Viewer</TITLE>
+<STYLE TYPE="TEXT/CSS"> BODY {background-color: white; margin: 20pt; font-size: 12px; line-height: 18px; font-family: Arial, Sans-Serif} H1, H2 {color: black} H3 {color: red} .H3I {margin-left: 1em} P {text-align: justify}
+</STYLE>
+</HEAD>
+<BODY link="#cc0000" alink="#cc0000" vlink="#996666">
+<CENTER>
+<H1>Adobe<SUP>&reg;</SUP> SVG Viewer f&uuml;r Windows</H1>
+<H2>Hinweise zu dieser Version</H2>
+<H3>Version 2.0 (Build 55, 3/14/01)</H3>
+</CENTER>
+<H2>Inhalt</H2>
+<UL>
+<LI><A HREF="#about">Info &uuml;ber SVG Viewer</A>
+<LI><A HREF="#sysreq">Systemanforderungen</A>
+<LI><A HREF="#installing">Installieren von SVG Viewer</A>
+<LI><A HREF="#copyplugin">Kopieren von Netscape-Zusatzmodulen (Plug-ins) in andere Browser</A>
+<LI><A HREF="#viewing">Anzeigen von SVG-Dateien in einem Web-Browser</A>
+<LI><A HREF="#converting">Konvertieren von Grafiken zu SVG</A>
+<LI><A HREF="#tips">Tipps und Anmerkungen</A>
+<LI><A HREF="#problems">Bekannte Probleme</A>
+<LI><A HREF="#history">Versionsgeschichte</A>
+<LI><A HREF="#contact">Ansprechpartner</A>
+<LI><A HREF="#copyright">Hinweis zum Copyright</A>
+<LI><A HREF="http://www.adobe.com/svg/">Weitere Informationen &uuml;ber den Adobe-Kundendienst f&uuml;r SVG</A>
+</UL>
+<P><HR>
+<H2><A NAME="about"></A>Info &uuml;ber SVG Viewer</H2>
+<P>Adobe SVG Viewer lehnt sich weitgehend an den am 02.11.00 ver&ouml;ffentlichten Entwurf der Spezifikation f&uuml;r SVG <a href="http://www.w3.org/TR/2000/CR-SVG-20001102/index.html">("Candidate Recommendation")</a> an. Beachten Sie, da&szlig; die Entwickung dieser Spezifikation noch nicht abgeschlossen ist und solange vorgef&uuml;hrt wird, bis der Status einer Empfehlung ("Recommended Specification") vergeben wird.
+<H2><A NAME="installing"></A>Installieren von SVG Viewer</H2>
+<P><OL>
+<LI>Vor der Installation m&uuml;ssen s&auml;mtliche Anwendungen geschlossen werden, die bisher zur Anzeige von SVG-Dateien mit einer &auml;lteren Version von SVG Viewer verwendet wurden.
+<LI>Starten Sie das Installationsprogramm. Sie k&ouml;nnen die neuesten Installationsprogramme unter folgender Adresse herunterladen: <a href="http://www.adobe.com/svg/viewer/install">http://www.adobe.com/svg/viewer/install</a>.
+</OL>
+<H2><A NAME="copyplugin"></A>Kopieren von Netscape-Zusatzmodulen (Plug-ins) in andere Browser</H2>
+<P>Wenn Sie einen weiteren Netscape-Browser installieren, der das Zusatzmodul f&uuml;r Netscape unterst&uuml;tzt, k&ouml;nnen Sie die folgenden Dateien in Ihren Plugin-Ordner kopieren, damit Sie in dem neuen Browser auch SVG-Dateien anzeigen zu k&ouml;nnen:
+<UL>
+<LI>NPSVGVw.dll
+<LI>SVGView.dll
+<LI>SVGViewer.zip
+</UL>
+<H2><A NAME="viewing"></A>Anzeigen von SVG-Dateien in einem Web-Browser</H2>
+<P>Nach der Installation von Adobe SVG Viewer sollten Sie in der Lage sein, jede beliebige SVG-Datei aus Illustrator in einen beliebigen unterst&uuml;tzten Web-Browser zu exportieren und dort anzuzeigen.</P>
+<H2><A NAME="converting"></A>Konvertieren von Grafiken zu SVG</H2>
+<P>Es ist m&ouml;glich, SVG-Dateien aus Illustrator 9 zu exportieren. Sie k&ouml;nnen Ihre Grafiken in Illustrator erstellen, als SVG-Dateien exportieren und anschlie&szlig;end interaktive JavaScript-Funktionen, Animationen sowie Filtereffekte manuell hinzuf&uuml;gen.</P>
+<H2><A NAME="tips">Tipps und Anmerkungen</H2>
+<UL>
+<LI>
+Style-Attribute (oder Style-Attribute mit Bereichsreferenzen) erm&ouml;glichen ein schnelleres Rendering als eingebettete Stylesheets.
+<LI>Halten Sie die Gr&ouml;&szlig;enverh&auml;ltnisse der <code>Filter</code>-Elementattribute <code>x</code>, <code>y</code>, <code>Width</code> und <code>Height</code> so niedrig wie m&ouml;glich, damit der Bereich, f&uuml;r den der Filtereffekt berechnet werden mu&szlig;, nicht zu gro&szlig; ausf&auml;llt. Ihre Grafiken werden dann schneller angezeigt.
+<li>Sie k&ouml;nnen ein SVG-Dokumentobjekt aus einer SVG-Behandlungsroutine laden, indem Sie den Aufruf <code>getTarget</code> auf das eingef&uuml;hrte <code>evt</code>-Objekt anwenden. Beispiel: <pre>
+  // Retrieve the SVG document object:
+  var directTarget = evt.getTarget();
+  var svgDocument;
+  if( directTarget.getNodeType() != 9 )  // if not DOCUMENT_NODE
+    svgDocument = directTarget.getOwnerDocument();
+  else
+    svgDocument = directTarget;
+</pre>
+</UL>
+<P><HR>
+<H2><A NAME="sysreq"></A>Systemanforderungen</H2>
+<UL>
+<LI>Windows 95, 98, 2000 oder NT 4.0
+<LI>Netscape Navigator oder Communicator, Version 4.0 - 4.75, oder Internet Explorer 4.0 oder neuer. Netscape 6 wird <emph>nicht</emph> unterst&uuml;tzt.
+<LI>13 MB Festplattenspeicher
+<LI>32 MB RAM empfohlen
+</UL>
+<P><HR>
+<H2><A NAME="problems"></A>Bekannte Probleme mit SVG Viewer</H2>
+<H3><A NAME="problems_all"></A>Alle Browser</H3>
+<OL>
+<li>Bei Elementen, die sich nahe dem Rand einer SVG-Grafik befinden, wird m&ouml;glicherweise kein mouseout-Vorgang (beim Herausbewegen der Maus) ausgel&ouml;st.
+</OL>
+<H3><A NAME="problems_ie"></A>Internet Explorer</H3>
+<OL>
+<li>Um SVG Viewer als ActiveX-Steuerelement in anderen Anwendungen (wie Microsoft Office) verwenden zu k&ouml;nnen, ben&ouml;tigen Sie Internet Explorer 4 oder neuer.
+<li>Wenn Sie mehrere Fenster &ouml;ffnen, die eine Verkn&uuml;pfung zu der selben mit dem HTML-Tag &lt;embed&gt; eingebetteten SVG-Datei enthalten, und aus einem dieser Fenster drucken, werden beim Ausdruck m&ouml;glicherweise die DOM-Einstellungen des anderen Fensters verwendet. Dieser Fehler ist auf Internet Explorer zur&uuml;ckzuf&uuml;hren.
+<li>Internet Explorer erlaubt keine Unterscheidung von Fenstereinstellungen &uuml;ber ein in einer SVG-Datei definiertes Skript.
+<li>Das Adobe SVG-Zusatzmodul (Plugin) f&uuml;r Netscape wird in Internet Explorer unter Windows <b>nicht</b> unterst&uuml;tzt.
+</OL>
+<H3><A NAME="problems_nn"></A>Netscape</H3>
+<OL>
+<li><!--ABTS#392459-->F&uuml;r Netscape 4.x verwendete Zusatzmodule k&ouml;nnen keine <code>onunload</code>-Skripts ausf&uuml;hren, da Netscape das Zusatzmodul erst nach Beendigung seiner Skriptumgebung &uuml;ber das Entladen benachrichtigt.
+<li><!--ABTS#390346-->In Netscape 6.0 werden beim Drucken von Seiten mit Zusatzmodulen Fehlermeldungen ausgegeben. Eingebetteter Inhalt wird nicht gedruckt. Es werden zwei Plugin-Fehlermeldungen angezeigt. Wenn Sie die Fehlermeldungen ignorieren, druckt Netscape zwar die HTML-Seite, statt des SVG-Inhalts wird jedoch ein leerer Bereich ausgegeben.
+<li>Beim Verlassen einer Web-Seite entl&auml;dt Netscape h&auml;ufig das Adobe SVG Viewer-Zusatzmodul bevor alle auf der HTML-Seite ausgef&uuml;hrten Skripts beendet wurden. Stellen Sie deshalb beim Verfassen von Skripts sicher, da&szlig; das Zusatzmodul noch geladen ist, wenn Sie in Ihrem HTML-JavaScript versuchen, mit dem R&uuml;ckruf <code>setTimeout</code> oder <code>setInterval</code> auf das SVG DOM zuzugreifen.
+<li>Verwenden Sie f&uuml;r Netscape m&ouml;glichst keinen HTML-Code in der folgenden Form, da dieser in Netscape nicht vorgesehen ist: <pre>
+  &lt;a href="#" onclick="myScriptWhichModifiesSVG()"&gt;
+</pre>
+<p>Nachdem JavaScript auf den onclick-Vorgang reagiert und mit der Ausf&uuml;hrung des Skripts beginnt, reagiert Netscape n&auml;mlich ebenfalls auf das Anklicken der Verkn&uuml;pfung, unterbricht JavaScript und l&auml;dt die aktuelle Seite erneut. Sie k&ouml;nnen diesen Konflikt vermeiden, indem Sie den Code auf folgende Weise formulieren: <pre>
+  &lt;a href="javascript:myScriptWhichModifiesSVG()"&gt;
+</pre>
+<li><!--ABTS#364416-->Enth&auml;lt eine JavaScript-Behandlungsroutine einen Fehler, wird der gesamte darauffolgende JavaScript-Code nicht ausgef&uuml;hrt. Dies liegt an einem technischen Problem in Netscape bei der Behandlung von durch Zusatzmodulen ausgef&uuml;hrten Skripts.
+<li>Aufgrund der beschr&auml;nkten Skript-Kompatibilit&auml;t von Netscape ist es nicht m&ouml;glich, den URL anderer Frames &uuml;ber eine SVG-Behandlungsroutine zu &auml;ndern.
+<li>Aufgrund der beschr&auml;nkten Kompatibilit&auml;t des Skriptmoduls von Netscape kann beim Aufruf der Funktion <code>alert()</code> in einer SVG-Behandlungsroutine ein Fehler auftreten und darauffolgender JavaScript-Code nicht ausgef&uuml;hrt werden. &Auml;hnliche Probleme k&ouml;nnen in allen gebundenen Programmfenstern von Netscape, einschlie&szlig;lich des Sicherheitsberechtigungsdialogfelds, auftreten. Es scheint, da&szlig; dieses Problem in Netscape 4.75 teilweise behoben wurde; dies gilt jedoch nicht f&uuml;r Windows 98.
+<li><!--ABTS#392481-->Netscape weist einen Konstruktionsfehler auf, der bei Zusatzmodulen, die JavaScript verwenden, Probleme verursacht. Wenn Sie eine Seite mit einem Zusatzmodul, das JavaScript verwendet, laden und danach JavaScript deaktivieren und den Browser beenden, st&uuml;rzt Netscape ab.
+<li><!--ABTS#389988-->Innerhalb eines SVG-Skripts gestattet Netscape nicht immer den Zugriff auf den Array <code>document.embeds[]</code>. Verwenden Sie stattdessen <code>document.meinSVG</code>, um dieses Problem zu umgehen. <code>meinSVG</code> steht hierbei f&uuml;r den Namen Ihres eingebetteten Dokuments.
+<li><!--ABTS#364417-->Fehler, die in durch Netscape 4.x-Zusatzmodule ausgef&uuml;hrten Skripts auftreten, werden nicht in der Javascript-Konsole angezeigt.
+<li><!--ABTS#364461-->Netscape 4.x verliert bei jeder Skriptausf&uuml;hrung eine kleine Menge Arbeitsspeicher.
+<li><!--ABTS#364524-->Netscape 4.x st&uuml;rzt beim Schlie&szlig;en ab, wenn der Browser zuvor durch Doppelklicken auf eine Web-Seite gestartet wurde, die Code f&uuml;r das Zusatzmodul LiveConnect enth&auml;lt.
+<li>Wenn Sie in Netscape die Seitenansicht f&uuml;r eine Seite anzeigen, die Zusatzmodule (wie Adobe SVG Viewer) enth&auml;lt, st&uuml;rzt Netscape ab. Entsprechend st&uuml;rzt Netscape auch beim Drucken von Seiten ab, die Zusatzmodule zur Verwendung mit Acrobat Distiller enthalten.
+<li>Versuchen Sie mit Netscape 4.0x eine SVG-Datei gleichzeitig in zwei verschiedenen Fenstern anzeigen, wird das zweite Fenster m&ouml;glicherweise nicht durch JavaScript initialisiert, wenn die SVG-Datei eine globale JavaScript-Funktion auf das Fensterobjekt anwendet. Sie k&ouml;nnen dieses Problem vermeiden, indem Sie eine neuere Version von Netscape verwenden.
+<li>Aufgrund eines technischen Problems in Netscape 6 wird das SVG-Kontextmen&uuml; nicht aufgerufen, wenn der Benutzer im SVG-Bereich mit der rechten Maustaste klickt. Stattdessen wird das Kontextmen&uuml; von Netscape 6 aufgerufen.
+</OL>
+<P><HR>
+<H2><A NAME="history"></A>Versionsgeschichte</H2>
+<h3>&Auml;nderungen gegen&uuml;ber Version 1.0 von Adobe SVG Viewer</h3>
+<ul>
+<li>Elemente und Attribute:
+<ul>
+<li>Folgende Elemente werden nun ebenfalls unterst&uuml;tzt: <code>altGlyph</code>, <code>altGlyphDef</code>, <code>font</code>, <code>font-face</code>, <code>glyph</code>, <code>glyphRef</code>, <code>hkern</code>, <code>missing-glyph</code>, <code>mpath</code>, <code>pattern</code> und <code>vkern</code>.
+<li>Unterst&uuml;tzung f&uuml;r SVG-Darstellungsattributen wurde hinzugef&uuml;gt
+<li>Unterst&uuml;tzung f&uuml;r die Verwendung von <code>symbol</code>-Elementen als <code>use</code>-Elemente wurde abgeschlossen
+<li>Unterst&uuml;tzung des Attributs <code>spreadMethod</code> f&uuml;r Verl&auml;ufe wurde hinzugef&uuml;gt
+<li>Unterst&uuml;tzung des neuen Attributs <code>primitiveUnits</code> f&uuml;r Filtereffekte wurde hinzugef&uuml;gt
+<li>Unterst&uuml;tzung eines "diskreten" Moduses f&uuml;r <code>feComponentTransfer</code> wurde hinzugef&uuml;gt
+</ul>
+<li>CSS-Eigenschaften:
+<ul>
+<li>Folgende CSS-Eigenschaften werden nun ebenfalls unterst&uuml;tzt: <code>alignment-baseline</code>, <code>color-interpolation</code>, <code>direction</code>, <code>dominant-baseline</code>, <code>flood-color</code>, <code>flood-opacity</code>, <code>kerning</code>, <code>lighting-color</code>, <code>pointer-events</code> und <code>unicode-bidi</code>. Die Unterst&uuml;tzung der Eigenschaft <code>pointer-events</code> erm&ouml;glicht keine Transparenz f&uuml;r Rasterelemente.
+<li>Zus&auml;tzliche Unterst&uuml;tzung der Eigenschaft <code>font-variant</code>, allerdings nur f&uuml;r SVG-Schriften
+<li>Die Eigenschaft <code>baseline-identifier</code> wird nicht mehr unterst&uuml;tzt, da diese in der aktuellsten unterst&uuml;tzten Spezifikation durch die Eigenschaft <code>alignment-baseline</code> ersetzt wurde.
+<li>Die Standardwerte der Eigenschaften <code>clip-rule</code> und <code>fill-rule</code> wurden ge&auml;ndert. Statt <code>even-odd</code> wird nun <code>non-zero</code> verwendet. Dies entspricht der aktuellsten unterst&uuml;tzten Spezifikation.
+<li>Die Behandlung von CSS-Einheiten wurde im aktuellsten Entwurf der SVG-Spezifikation ("Candidate Recommendation") ge&auml;ndert. CSS-Einheiten werden nun nicht mehr bei der Datenanalyse sondern zur Anzeigezeit in den Anzeigebereich konvertiert. Dies wirkt sich deutlich auf die Funktionsweise des Zoom-Befehls aus.
+</ul>
+<li>DOM:
+<ul>
+<li>Bis auf die Schnittstelle <code>keyEvent</code>, die in der "Candidate Release"-Spezifikation f&uuml;r DOM 2 nicht definiert ist, wurde die Unterst&uuml;tzung von DOM Level 2 in SVG-Viewer nun an die "Candidate Release"-Spezifikation f&uuml;r DOM 2 angepa&szlig;t. Die Unterst&uuml;tzung der Schnittstelle <code>keyEvent</code> entspricht der neuesten Ver&ouml;ffentlichung der DOM 2-Version im Spezifikationsentwurf ("Draft Spezification") vom November 99.
+<li>Unterst&uuml;tzung der Schnittstelle <code>SVGRect</code> wurde hinzugef&uuml;gt
+<li>Unterst&uuml;tzung der Schnittstelle <code>SVGPoint</code> wurde hinzugef&uuml;gt (Ausnahme: keine Unterst&uuml;tzung f&uuml;r Methode <code>matrixTransform</code>)
+<li>Unterst&uuml;tzung der Schnittstelle <code>SVGTextContentElement</code> wurde hinzugef&uuml;gt (Ausnahme: keine Unterst&uuml;tzung f&uuml;r die Eigenschaften <code>getTextLength</code> und <code>getLengthAdjust</code>)
+<li>Unterst&uuml;tzung von <code>rootElement</code>, <code>getRootElement</code>, <code>currentScale</code>, <code>getCurrentScale</code>, <code>setCurrentScale</code>, <code>currentTranslate</code>, <code>getCurrentTranslate</code> und <code>setCurrentTranslate</code> f&uuml;r die Schnittstelle <code>SVGDocument</code> wurde hinzugef&uuml;gt
+<li>Unterst&uuml;tzung der DOM2-Methoden <code>hasAttribute</code> und <code>hasAttributeNS</code> f&uuml;r die Schnittstelle <code>Element</code> wurde hinzugef&uuml;gt
+<li>Unterst&uuml;tzung der neuen, nicht standardisierten, sogenannten <code>garbageCollect</code>-Methode f&uuml;r das <code>Document</code>-Objekt wurde hinzugef&uuml;gt Diese Methode enth&auml;lt keine Parameter und liefert kein Ergebnis. Beim Aufruf dieser Methode werden alle zuvor aus dem Baum entfernten Node-Objekte freigegeben. Wurde ein Node durch einen Skriptvorgang aus einem Baum entfernt, empfielt es sich, im Skript die Methode <code>garbageCollect</code> f&uuml;r das SVG-Dokument aufzurufen, nachdem das entfernte (und zur&uuml;ckgegebene) Node im Skript nicht mehr ben&ouml;tigt wird. Nach diesem Aufruf sind s&auml;mtliche Referenzen auf einen Node, der vor dem Aufruf von <code>garbageCollect</code> nicht zum Dokument geh&ouml;rte, nicht mehr verf&uuml;gbar, wenn auf dessen Methoden zugegriffen wird. Dies ist nur f&uuml;r Netscape-Browser von Vorteil, da das von Netscape verwendete LiveConnect keine weichen Referenzen unterst&uuml;tzt. Der Aufruf wird jedoch plattform&uuml;bergreifend unterst&uuml;tzt. Er kann auch unter Internet Explorer ohne jegliche Auswirkung verwendet werden.
+</ul>
+<li>Weitere &Auml;nderungen:
+<ul>
+<li>In &Uuml;bereinstimmung mit dem aktuellsten Entwurf der SVG-Spezifikation ("Candidate Recommendation") werden keine <code>userSpace</code>-Einheiten mehr verwendet.
+<li>Unterst&uuml;tzung f&uuml;r Benutzer-Stylesheets wurde hinzugef&uuml;gt. SVG Viewer sucht nach einer Datei namens <code>SVG-User-Styles.css</code> unter Verwendung der folgenden Suchkriterien:
+<p><table align="center" width="70%">
+<tr><td align="center" bgcolor="#EEEEEE">Betriebssystem</td><td align="center" bgcolor="#EEEEEE" colspan="2">Durchsuchte Pfade</td></tr>
+<tr><td valign="top">Windows 2000</td><td><ol>
+<li>Eigene Dateien
+<li>\Dokumente und Einstellungen\&lt;user&gt;\Anwendungsdaten
+<li>\Dokumente und Einstellungen\&lt;user&gt;\Lokale Einstellungen\Anwendungsdaten
+<li>\Dokumente und Einstellungen\All Users\Anwendungsdaten
+</ol></td></tr>
+<tr><td valign="top">Windows 98</td><td><ol>
+<li>Eigene Dateien
+</ol></td></tr>
+<tr><td valign="top">Windows NT</td><td><ol>
+<li>\WINNT\Profiles\&lt;user&gt;\Personal
+<li>\WINNT\Profiles\&lt;user&gt;\Application Data
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 8.x</td><td><ol>
+<li>Systemordner:Preferences
+<li>Startvolume:Dokumente
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(Einzelbenutzer)</td><td><ol>
+<li>Systemordner:Preferences
+<li>Systemordner:Users:&lt;user&gt;
+<li>Startvolume:Dokumente
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(Mehrere Benutzer)</td><td><ol>
+<li>Startvolume:Users:&lt;user&gt;:Preferences
+<li>Startvolume:Dokumente
+</ol></td></tr>
+</table>
+<li>Adobe SVG Viewer verf&uuml;gt &uuml;ber eine eigne, integrierte Farbverwaltungsunterst&uuml;tzung. Diese Unterst&uuml;tzung sucht automatisch nach einem geeigneten Ger&auml;teprofil f&uuml;r die Anzeige. Ist auf Ihrem Computer Farbverwaltungs-Software installiert und ein Bildschirmprofil ausgew&auml;hlt, dann wird das ausgew&auml;hlte Bildschirmprofil auch von SVG-Viewer verwendet. Ist keine Farbverwaltungs-Software installiert, bzw. ist diese deaktiviert, dann sucht SVG-Viewer auf Ihrem System nach einem AMS-Profil (Adobe Monitor Settings).  Dieses Profil wird von dem (zusammen mit anderen Adobe-Produkten installierten) Werkzeug Adobe Gamma erstellt und ist normalerweise zusammen mit anderen Farbprofilen in den entsprechenden Verzeichnissen des Host-Systems gespeichert.  Findet SVG-Viewer kein geeignetes Ger&auml;teprofil, wird das sRGB-Standardprofil f&uuml;r die gesamte Wiedergabe verwendet.
+<li>Das Zusatzmodul f&uuml;r Netscape unterst&uuml;tzt nun DOM-Zugriff durch Java-Clients.
+<li>Das ActiveX-Steuerelement unterst&uuml;zt nun Behandlungsroutinen, die nicht aus JavaScript stammen (z.&nbsp;B. Behandlungsroutinen aus Visual Basic).
+<li>Anpassungen zur Kompatibilit&auml;t mit Windows 2000
+<li>Um die Zugriffsm&ouml;glichkeiten zu verbessern, wurde eine weitere M&ouml;glichkeit zur Navigation in SVG-Grafiken mit Hilfe der Tastatur hinzugef&uuml;gt.  Bei aktiverer Rollen-Taste k&ouml;nnen Sie mit den Pfeiltasten in der aktivierten SVG-Grafik navigieren.
+<li>Verbesserte Leistung bei mehreren gleichzeitigen Animationen innerhalb derselben SVG-Datei. SVG-Dateien mit kleinen &uuml;ber weitere Abst&auml;nde gleichzeitig ausgef&uuml;hrten Animationen werden in der aktuellen Version in der Regel schneller angezeigt als in Version 1.0.
+<li>Verbesserte Leistung bei Zusatzmodulen unter Macintosh
+<li>Verbesserte Unterst&uuml;tzung von vertikalem Text
+<li>Unterst&uuml;tzung von bidirektionalem Text
+<li>Allgemeine Leistungsoptimierungen
+<li> <code>feImage</code> wurde angepa&szlig;t und kann nun auf die gleiche Weise wie das <code>use</code> Element verwendet werden
+<li>Aktualisierte Unterst&uuml;tzung f&uuml;r PNG-Bilder
+<li>Optimierte Verwendung des Arbeitsspeichers
+<li>Unterst&uuml;tzung f&uuml;r Pfadanimiation hinzugef&uuml;gt
+</ul>
+</ul>
+<P><HR>
+<H2><A NAME="contact"></A>Ansprechpartner</H2>
+<P>Wenn Sie Funktionsfehler und/oder Kommentare angeben m&ouml;chten, besuchen Sie bitte die <A HREF="http://www.adobe.com/svg/">SVG-Zone</A> von Adobe.com.
+<H2><A NAME="copyright"></A>Hinweis zum Copyright</H2>
+<P>&copy; Copyright 1998-2001, Adobe Systems Incorporated. Alle Rechte vorbehalten.
+<P>Adobe und Illustrator sind Marken von Adobe Systems Incorporated. Windows und Windows NT sind in den USA und anderen L&auml;ndern eingetragene Marken von Microsoft Corporation. Mac OS und TrueType sind in den USA und anderen L&auml;ndern eingetragene Marken von Apple Computer, Inc. Alle anderen Marken sind Eigentum ihrer jeweiligen Inhaber.
+</BODY>
+</HTML>

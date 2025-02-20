@@ -1,0 +1,145 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category Menu Item]
+//=========================
+//	[Get Project][Cards]
+//=========================
+//	<1>[Holiday Cards]
+"{50080D38-E715-4260-93A4-14C15A60B08C}"="Cards\\Holiday Cards"
+//	<2>[Greeting Cards]
+"{9E904EB1-F178-4a43-BBE3-305C5F65F3D1}"="Cards\\Greeting Cards"
+//	<3>[Invitations]
+"{CEC53924-03B8-443b-8F92-D005BF3084BA}"="Cards\\Invitations"
+//	<4>[PostCards]
+"{D493F6F7-9FF4-4a12-B5D7-DCC53549D5B6}"="Cards\\Postcards"
+//	<5>[Sports Cards]
+"{6EE07D5D-6ADB-4052-B432-9FC8366DFA7C}"="Cards\\Sports Cards"
+
+//==============================
+//	[Get Project][Album Pages]
+//==============================
+//	<1>[Scrapbook Pages]
+"{F4B79B7D-D005-4fd8-9722-D99E70FB102B}"="Album Scrapbook\\Scrapbook Pages"
+//	<2>[Album Cover]
+"{6B42A7E2-5996-460e-B176-346DC186CF06}"="Album Scrapbook\\Album Covers"
+//	<3>[Page Borders]
+"{44BF8441-CD1B-11d4-8042-00004CD94BFF}"="Album Scrapbook\\Page Borders"
+//	<3-1>[Object Borders]
+"{44BF8442-CD1B-11d4-8042-00004CD94BFF}"="Album Scrapbook\\Page Borders\\Object Borders"
+//	<3-2>[Texture Borders]
+"{44BF8443-CD1B-11d4-8042-00004CD94BFF}"="Album Scrapbook\\Page Borders\\Texture Borders"
+
+//=========================
+//	[Get Project][Frames]
+//=========================
+//	<1>[Photo Frames]
+"{CC9DC0E0-6E5C-499e-9144-7F36FF7CA548}"="Frames\\Photo Frames"
+
+//============================
+//	[Get Project][Promotion]
+//============================
+//	<1>[Poster]
+"{366D5CEE-0DED-4492-A042-A414026AF0B3}"="Promotion\\Poster"
+//	<2>[Flyers]
+"{355FC790-E074-44af-9281-BE4E35466C86}"="Promotion\\Flyer"
+//	<3>[Banners]
+"{355ADF36-2CB9-4e46-9063-B1B858049AAA}"="Promotion\\Banner"
+
+//============================
+//	[Get Project][Business]
+//============================
+//	<1>[Business Cards]
+"{2923ACD6-3C2F-4c4d-9B66-E2488A8C4ECB}"="Business\\Business Cards"
+//	<2>[ID Cards]
+"{57D6CE41-8AA5-48d6-9B62-2E0591A6E61A}"="Business\\ID Cards"
+//	<3>[Certificates]
+"{58FEF6FA-5A20-4277-821E-019AADC73943}"="Business\\Certificates"
+
+//=============================
+//	[Get Project][Stationery]
+//=============================
+//	<1>[Labels]
+"{FD0EDC4F-1B09-40a3-9F17-E99B43D0E61A}"="Stationery\\Labels"
+//	<2>[LetterHead]
+"{FB42A6BE-A801-417f-8F0A-7E1E74787AD0}"="Stationery\\Letterhead"
+//	<3>[Envelopes]
+"{1EDEAE58-C683-484b-9E1A-CEEB028E4D3B}"="Stationery\\Envelopes"
+//	<4>[Bookmarks]
+"{F93A6F85-AC84-4cf0-A2BC-73F34C98F51B}"="Stationery\\Bookmark"
+//	<5>[Gift Tags]
+"{E99158BB-01E0-41cf-8F85-3AB4D4C3C36B}"="Stationery\\Gifts Tags"
+//	<6>[Notes]
+"{AEE4B50A-460B-4472-A89C-D10367012ACE}"="Stationery\\Notes"
+//	<7>[Calendar]
+"{5206B16B-AF08-40ff-A36B-D7EB735D40E6}"="Stationery\\Calendars"
+
+//======================================
+//	[Get Project][3D Folding Projects]
+//======================================
+//	<1>[3D Folding Frames]
+"{1D1C4AD9-6EC2-4d2e-A8EA-1393329E2152}"="3D Folding Projects\\3D Folding Frames"
+//	<2>[3D Gift Boxes]
+"{9045237E-5272-4c7c-A219-063202B3DF40}"="3D Folding Projects\\3D Gift Boxes"
+//	<3>[Folding Bookmarks]
+"{990445B2-F571-4bfd-A839-3A80F093E6F6}"="3D Folding Projects\\Folding Bookmark"
+//	<4>[Others]
+"{8EC6CEB5-E736-480c-988B-D3E75D3B8C3A}"="3D Folding Projects\\Others"
+
+//============================
+//	[Get Project][Fun Stuff]
+//============================
+//	<1>[Magazine Covers]
+"{F7BD444B-160A-42f9-A326-2F8A4878849B}"="Fun Stuff\\Magazine Covers"
+//	<2>[Body Switches]
+"{F0356E5E-2F1C-4cf5-97C9-FA9D2D411B1C}"="Fun Stuff\\Body Switches"
+//	<3>[Fun ID Cards]
+"{800FBA1E-4672-422b-BB3E-2AB17A42DB82}"="Fun Stuff\\Fun ID Cards"
+//	<4>[Guest Name Cards]
+"{8CF10C55-55A1-4cff-A1E7-46FBFD8E715E}"="Fun Stuff\\Guest Name Cards"
+//	<5>[Certificates]
+"{6E367BC6-D299-4d27-ACD8-003636FC39B0}"="Fun Stuff\\Certificates(Kid)"
+
+//=================================
+//	[Get Project][Special Events]
+//=================================
+//	<1>[Wedding]
+"{44446AC6-2038-4cd1-919A-7CAC1A820CAA}"="Special Events\\Wedding"
+//	<1-1>[Wedding01]
+"{2A8D8561-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Wedding\\Wedding01"
+//	<1-2>[Wedding02]
+"{2A8D8562-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Wedding\\Wedding02"
+//	<1-3>[Wedding03]
+"{2A8D8567-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Wedding\\Wedding03"
+//	<2>[Birthday]
+"{0CF774C7-5418-4596-9D9C-3659DC8EF091}"="Special Events\\Birthday"
+//	<2-1>[Birthday01]
+"{2A8D8568-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Birthday\\Birthday01"
+//	<2-2>[Birthday02]
+"{2A8D8569-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Birthday\\Birthday02"
+//	<3>[Baby]
+"{260D1001-12AF-4f9c-9541-4216E6DCB2FF}"="Special Events\\Baby"
+//	<3-1>[Baby01]
+"{2A8D856A-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Baby\\Baby01"
+//	<3-2>[Baby02]
+"{2A8D856B-B95A-11d4-8042-00004CD94BFF}"="Special Events\\Baby\\Baby02"
+//	<4>[Prom]
+"{FA409841-B970-11d4-8042-00004CD94BFF}"="Special Events\\Prom"
+//	<5>[Club]
+"{80519E65-2D1C-4dc2-B8F7-B40C59D1E057}"="Special Events\\Club"
+
+//=========================
+//	[Get Projects][Blank]
+//=========================
+//	<1>[Cards]
+"{BD72DC6A-C495-4a88-993D-F8D70807CE37}"="Blank\\Cards"
+//	<2>[Labels]
+"{6626E277-71CE-46e8-AF7D-ED6F754C63CE}"="Blank\\Labels"
+//	<3>[3D Folding Projects]
+"{BB7E9AA8-CCA5-4ac4-9584-32DEDCCF90D6}"="Blank\\3D Folding Projects"
+//	<4>[Name Cards]
+"{546615DA-154C-4a1a-BE16-F95562C812E0}"="Blank\\Name Cards"
+//	<5>[Stationary]
+"{3CAB5A40-442E-4528-8E23-20A3AEEC8297}"="Blank\\Stationery"
+//	<6>[My Projects]
+"{01530B11-1B50-48a4-AB52-68573AF4D920}"="Blank\\My Projects"
+

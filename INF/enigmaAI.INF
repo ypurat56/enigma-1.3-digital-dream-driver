@@ -1,0 +1,92 @@
+; Localized	07/25/2002 11:19 AM (GMT+08:00)	1.0.3.7  ca504ai.inf
+; Bulk Driver Information
+; Copyright (c) 2001-2002 Sunplus Tech
+; Manufacturer: Sunplus Tech
+
+[Version]
+Signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+provider=%USBCamera%
+DriverVer=07/25/2002,1.0.3.7
+;CatalogFile=GC-A50.cat
+;CatalogFile.NTx86=CA504A.cat
+;CatalogFile=enigma.cat
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[DestinationDirs]
+Camera.CopyDriver=10,System32\Drivers
+
+
+; =================== Table of content =========================
+
+[Manufacturer]
+%Sunplus.MfgName%=Sunplus.Section
+
+[SourceDisksNames]
+;1=%DiskName%,file.tag,,,
+1="Enigma Driver Disk", "Enigma.cab",0 ,
+[SourceDisksFiles]
+Bulk504.SYS=1
+
+
+; =================== Sunplus ==================================
+
+[Sunplus.Section]
+%CAMERA.DeviceDesc%=Ca504A.Dev,USB\VID_04Fc&PID_504a&MI_01
+%CAMERA.DeviceDesc%=Ca504A.Dev,USB\VID_05DA&PID_1018&MI_01
+
+; --------------------------------------------------------------
+; This case for CA504A
+
+[Ca504A.Dev]
+CopyFiles=Camera.CopyDriver
+AddReg=Camera.AddReg
+
+[Ca504A.Dev.NT]
+CopyFiles=Camera.CopyDriver
+AddReg=Camera.AddReg
+
+[Ca504A.Dev.Services]
+Addservice = USBCamera,0x00000002,Ca504A.AddService
+
+[Ca504A.Dev.NT.Services]
+Addservice = USBCamera,0x00000002,Ca504A.AddService
+
+[Ca504A.AddService]
+DisplayName    = %CAMERA.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\%DriverFullName%
+LoadOrderGroup = Base
+HKLM,"System\Currentcontrolset\Services\%DriverName%\Parameters","MaximumTransferSize",0x10001,4096
+HKLM,"System\Currentcontrolset\Services\%DriverName%\Parameters","DebugLevel",0x10001,2
+
+
+; =================== Global ==================================
+
+[Camera.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,%DriverFullName%
+
+[Camera.CopyDriver]
+Bulk504.sys
+
+[Strings]
+USBCamera=         "Enigma"
+Sunplus.MfgName=   "Enigma"
+;USBCamera=         "Sunplus"
+;Sunplus.MfgName=   "Sunplus"
+
+DiskName=       ""
+DriverName=     "Bulk504"
+DriverFullName= "Bulk504.sys"
+
+Camera.DeviceDesc= "Enigma DSC Bulk Driver"
+Camera.SvcDesc=    "Enigma DSC Still Image Capture"
+
+;CAMERA.DeviceDesc= "Icatch(II) Still Camera Device"
+;CAMERA.SvcDesc=    "Icatch(II) Still Camera Device"

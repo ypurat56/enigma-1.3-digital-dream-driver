@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Adobe&reg; SVG Viewer</TITLE>
+<STYLE TYPE="TEXT/CSS">
+BODY {background-color: white; margin: 20pt; font-size: 12px; line-height: 18px; font-family: Arial, Sans-Serif}
+H1, H2 {color: black}
+H3 {color: red}
+.H3I {margin-left: 1em}
+P {text-align: justify}
+</STYLE>
+</HEAD>
+<BODY link="#cc0000" alink="#cc0000" vlink="#996666">
+
+
+<CENTER>
+<H1>Adobe<SUP>&reg;</SUP> SVG Viewer for Windows</H1>
+<H2>Release Notes</H2>
+<H3>Version 2.0 (Build 55, 03/14/01)</H3>
+</CENTER>
+
+
+<H2>Contents</H2>
+<UL>
+<LI><A HREF="#about">About the SVG Viewer</A>
+<LI><A HREF="#sysreq">System requirements</A>
+<LI><A HREF="#installing">How to install the SVG Viewer</A>
+<LI><A HREF="#copyplugin">How to copy Netscape plug-ins into other Browsers</A>
+<LI><A HREF="#viewing">How to view SVG files in your Web browser</A>
+<LI><A HREF="#converting">How to turn artwork into SVG</A>
+<LI><A HREF="#tips">Tips and Hints</A>
+<LI><A HREF="#problems">Known Problems</A>
+<LI><A HREF="#history">Revision History</A>
+<LI><A HREF="#contact">Contact Information</A>
+<LI><A HREF="#copyright">Copyright Notice</A>
+<LI><A HREF="http://www.adobe.com/svg/">More Information on Adobe's support for SVG</A>
+</UL>
+
+<P><HR>
+
+<H2><A NAME="about"></A>About the SVG Viewer</H2>
+
+<P>The Adobe SVG Viewer supports much of the <a
+href="http://www.w3.org/TR/2000/CR-SVG-20001102/index.html">Candidate
+Recommendation</a> draft specification of SVG published on 11/2/00. Please
+keep in mind that the specification is under development, and will continue to
+evolve until it is made a recommended specification.
+
+
+<H2><A NAME="installing"></A>How to install the SVG Viewer</H2>
+<P><OL>
+<LI>Before installing, please close any application which you have
+used to view SVG with an old version of the viewer.
+<LI>Run the installer. The latest released installers can be downloaded
+from <a href="http://www.adobe.com/svg/viewer/install">http://www.adobe.com/svg/viewer/install</a>.
+</OL>
+
+<H2><A NAME="copyplugin"></A>How to copy Netscape plug-ins into other Browsers</H2>
+<P>If you install another copy of Netscape which is supported by the
+Netscape plug-in, you can copy the following files into your plug-ins
+folder to view SVG from within that browser:
+<UL>
+<LI>NPSVGVw.dll
+<LI>SVGView.dll
+<LI>SVGViewer.zip
+</UL>
+
+
+<H2><A NAME="viewing"></A>How to view SVG files in your Web browser</H2>
+
+<P>Once you install the Adobe SVG Viewer, you should be able to view 
+supported SVG files in any supported Web browser.</P>
+
+<H2><A NAME="converting"></A>How to turn artwork into SVG</H2>
+
+<P>You can export SVG from Illustrator 9. If you wish to incorporate
+JavaScript into your SVG you can create your artwork in Illustrator
+and link to JavaScript functions with the JavaScript Interactivity
+Pallet and then export it as SVG, or export from Illustrator and add
+any JavaScript interactivity animation or filter effects by hand.</P>
+
+<H2><A NAME="tips">Tips and Hints</H2>
+
+<UL>
+<LI>Style attributes (or style attributes that use entity references)
+render more quickly than embedded stylesheets.
+<LI>Use tightly-bound percentages on the <code>x</code>, <code>y</code>,
+<code>width</code>, and <code>height</code> attributes on <code>filter</code>
+elements in order to minimize the area over which the filter effect needs to
+be calculated. This will result in graphics which display much more quickly.
+<li>You can retrieve the SVG document object from within SVG event
+handlers by calling <code>getTarget</code> on the <code>evt</code> object
+which is passed in. For example:
+<pre>
+  // Retrieve the SVG document object:
+  var directTarget = evt.getTarget();
+  var svgDocument;
+  if( directTarget.getNodeType() != 9 )  // if not DOCUMENT_NODE
+    svgDocument = directTarget.getOwnerDocument();
+  else
+    svgDocument = directTarget;
+</pre>
+</UL>
+
+<P><HR>
+
+
+
+<H2><A NAME="sysreq"></A>System Requirements</H2>
+<UL>
+<LI>Windows 95, 98, SE, 2000, ME, or NT 4.0 Service Pack 4 and up
+<LI>Netscape Navigator or Communicator versions 4.0 through 4.75, or
+Internet Explorer 4.0 or higher. Netscape 6 is <emph>not</emph> supported.
+<LI>13 MB of hard disk space
+<LI>32 MB of RAM recommended
+</UL>
+
+<P><HR>
+<H2><A NAME="problems"></A>Known Problems with the SVG Viewer</H2>
+
+<H3><A NAME="problems_all"></A>All Browsers</H3>
+<OL>
+<LI>If you install the Adobe SVG Viewer as an administrator of a Windows
+2000 system, you will need to view an SVG file and accept the EULA before
+non-administrators can view SVG on that machine.
+
+<li>It's possible for elements near the edge of an SVG graphic to not receive a
+mouseout event.
+<li>The SVG specification's support for masks has changed significantly since
+Illustrator 9 shipped, so Adobe SVG Viewer 2.0 might not display SVG masks exported
+from Illustrator 9.
+
+<LI>If you have multiple Windows operating systems (such as Windows 98 and
+Windows NT) installed on the same partition (for example, drive
+<code>C</code>), you must install the Adobe SVG Viewer on both operating
+systems. If you install it on one operating system, the Viewer will not work
+correctly when you reboot under the other operating system.
+</OL>
+
+<H3><A NAME="problems_ie"></A>Internet Explorer</H3>
+<OL>
+<li>You must have Internet Explorer 4 or higher installed in order to use
+the SVG Viewer as an ActiveX control in other applications (like Microsoft
+Office).
+<li>If you open more than one window containing a link to the same SVG
+file, and the SVG file is embedded using the HTML &lt;embed&gt; tag, then
+when you print one of the windows it may print based on changes to the DOM
+in the other window. This is due to limitations of Internet Explorer.
+<li>Due to Internet Explorer limitations, it's not possible to see properties of
+other windows from a script defined inside an SVG file.
+<li>Using the Adobe SVG Netscape plug-in under Internet Explorer on Windows is
+<b>not</b> supported.
+</OL>
+
+<H3><A NAME="problems_nn"></A>Netscape</H3>
+<OL>
+
+<li><!--ABTS#392459-->Netscape 4.x plug-ins cannot execute <code>onunload</code>
+scripts because at the time the plug-in receives notification from Netscape
+that the plug-in is being unloaded, the plug-in's script environment has already been
+closed down.
+<li><!--ABTS#390346-->Netscape 6.0 reports errors when printing pages with plug-ins, and then
+fails to print embedded contents. Netscape will report two plugin error
+alerts. Dismissing the alerts presented will then result in Netscape printing
+the HTML page, but with blank area for the SVG content.
+<li>When you leave a Web page, Netscape can often unload the Adobe SVG Viewer
+plug-in before Netscape terminates all scripts running in the HTML. Therefore
+you should be careful when writing scripts to check to see if the plug-in is
+still loaded before you attempt to access the SVG DOM from
+<code>setTimeout</code> or <code>setInterval</code> callbacks in your HTML
+JavaScript.
+<li>Due to design limitations of Netscape, avoid using HTML with the following form:
+<pre>
+  &lt;a href="#" onclick="myScriptWhichModifiesSVG()"&gt;
+</pre>
+<p>The problem is that JavaScript responds to the onclick event and
+begins executing the script, but then Netscape also responds to the
+fact that you clicked on a link, and interrupts JavaScript to re-load
+the current page. This conflict can be avoided by re-writing the code
+as follows:
+<pre>
+  &lt;a href="javascript:myScriptWhichModifiesSVG()"&gt;
+</pre>
+<li><!--ABTS#364416-->If a JavaScript event handler contains an error, any subsequent JavaScript will fail to
+execute. This is due to a bug in Netscape's handling of scripts executed by plug-ins.
+<li>Due to Netscape script limitations, you can't change the URL of another frame from
+an SVG event handler.
+<li>Due to Netscape script engine limitations, calling the <code>alert()</code>
+function from within an SVG event handler might not work, and it might cause
+subsequent JavaScript to no longer execute. Similar problems occur for any
+Netscape modal window, including the security privileges window. This bug
+appears to have been partially fixed by Netscape in Netscape 4.75, but not on
+Windows 98.
+<li><!--ABTS#392481-->There is a bug in Netscape involving plug-ins that use JavaScript. If you load a
+page with a plug-in that uses JavaScript and then disable Java and quit the browser,
+Netscape will crash.
+<li><!--ABTS#389988-->Netscape does not always allow you to access the <code>document.embeds[]</code>
+array from within an SVG script. To work around this, use <code>document.mySVG</code>,
+where <code>mySVG</code> is the name of your embed object.
+<li><!--ABTS#418797-->Netscape 4.x will crash if a plug-in invokes a link to a JPEG file.
+To work around this problem, embed your JPEG file in HTML or SVG before you link to it
+from your SVG file.
+
+<li><!--ABTS#364417-->Errors in scripts executed by Netscape 4.x plug-ins do not show up
+in the Javascript console window.
+<li><!--ABTS#364461-->Netscape 4.x leaks a small amount of memory every time a plug-in
+executes a script.
+<li><!--ABTS#364524-->Netscape 4.x will crash when you close it if you launched
+it by double-clicking to load a Web page containing LiveConnect plug-in content.
+<li>If you use "Print Preview" in Netscape on a page which contains plug-ins
+(such as the Adobe SVG Viewer), Netscape will crash. For a similar reason
+Netscape will crash when you try to print a page containing plug-ins using Acrobat
+Distiller.
+<li>If you use Netscape 4.0x to view the same SVG file in two windows, and that file
+uses a global JavaScript function on the window object, sometimes JavaScript will
+not initialize in the second window. The work-around is to upgrade to a more recent
+version of Netscape.
+<li>Due to a bug in Netscape 6, attempting to right-click within the SVG area
+to bring up context menu fails in Netscape 6. Instead, you get the Netscape 6
+context menu.
+<li><!--ABTS#402907-->Netscape 4.x on Swedish systems has a bug where it does not
+identify its plug-in folder location correctly in the system registry, thereby
+making it impossible for installers to install plug-ins. You can work around this
+problem by copying the files by hand, as described <a href="#copyplugin">above</a>.
+</OL>
+
+<P><HR>
+
+
+<H2><A NAME="history"></A>Revision History</H2>
+
+<h3>Changes since version 1.0 of the Adobe SVG Viewer</h3>
+<ul>
+
+<li>Updated to support the <a
+href="http://www.w3.org/TR/2000/CR-SVG-20001102/index.html">Candidate
+Recommendation</a> draft specification of SVG published on 11/2/00. The 2.0
+Viewer retains backward compatibility with the 1.0 Viewer where possible, and
+therefore supports much of the 3/3/00 draft specification of SVG. However, some 
+features of the specification (such as the handling of CSS units) have changed
+so significantly that it was not possible to retain backward compatibility.
+<li>Elements and Attributes:
+<ul>
+<li>Added support for the following elements: <code>altGlyph</code>,
+<code>altGlyphDef</code>, <code>font</code>, <code>font-face</code>,
+<code>glyph</code>, <code>glyphRef</code>, <code>hkern</code>,
+<code>missing-glyph</code>, <code>mpath</code>, <code>pattern</code>, 
+<code>switch</code>, and <code>vkern</code>.
+<li>Added support for the SVG Presentation Attributes.
+<li>Finished support for <code>use</code> element use of <code>symbol</code> elements.
+<li>Added support for the <code>spreadMethod</code> attribute on gradients.
+<li>Added support for the new attribute <code>primitiveUnits</code> on filter effects.
+<li>Added support for "discrete" mode for <code>feComponentTransfer</code>.
+</ul>
+
+<li>CSS properties:
+<ul>
+<li>Added support for the following CSS properties:
+<code>alignment-baseline</code>, <code>color-interpolation</code>, <code>direction</code>,
+<code>dominant-baseline</code>, <code>flood-color</code>,
+<code>flood-opacity</code>, <code>kerning</code>, <code>lighting-color</code>,
+<code>pointer-events</code>, and <code>unicode-bidi</code>. Support for the
+<code>pointer-events</code> property does not include support for transparency
+on raster elements.
+<li>Added support for the <code>font-variant</code> property, but only when
+applied to SVG fonts.
+<li>Removed support for the <code>baseline-identifier</code> property, which
+has been replaced with the <code>alignment-baseline</code> property in the
+most recently supported specification.
+<li>Changed the default values for the properties <code>clip-rule</code> and
+<code>fill-rule</code> from <code>even-odd</code> to <code>non-zero</code> to
+reflect the changes in the most recently supported specification.
+<li>The latest Candidate Recommendation draft specification for SVG changes the
+way CSS units are handled. They are now converted to user space on parse, rather
+than being converted at display time. This significantly changes the way the "Zoom"
+command works.
+</ul>
+
+<li>DOM:
+<ul>
+<li>The Viewer's DOM Level 2 support now conforms to the Candidate Release
+specification for DOM 2, except for the <code>keyEvent</code> interface, which
+is not specified in the DOM 2 Candidate Release specification. Support for the
+<code>keyEvent</code> interface conforms to the last DOM 2 published version of
+that interface, in the 9/99 draft specification.
+<li>Added support for the <code>SVGRect</code> interface.
+<li>Added support for the <code>SVGPoint</code> interface, except for the method
+<code>matrixTransform</code>.
+<li>Added support for the <code>SVGTextContentElement</code> interface, except
+for the <code>getTextLength</code> and <code>getLengthAdjust</code> properties.
+<li>Added support for <code>rootElement</code>, <code>getRootElement</code>,
+<code>currentScale</code>, <code>getCurrentScale</code>, <code>setCurrentScale</code>,
+<code>currentTranslate</code>, <code>getCurrentTranslate</code>, and 
+<code>setCurrentTranslate</code> on the <code>SVGDocument</code> interface.
+<li>Added support for the DOM2 methods <code>hasAttribute</code> and
+<code>hasAttributeNS</code> on the <code>Element</code> interface.
+<li>Added support for a new, non-standard, method on the <code>Document</code>
+object called <code>garbageCollect</code>. This method takes no parameters
+and returns no results. Calling this method will free up any Node objects that
+have previously been removed from the tree. If a script has performed an
+operation that results in the removal of a node from the tree, once the script
+has no further use for the removed (and returned) node, the script should call
+<code>garbageCollect</code> on the SVG document. Once called, any reference
+a script has to a node which was not part of the document when
+<code>garbageCollect</code> was called will always fail when its methods are
+accessed. This is only of benefit for Netscape browsers, since Netscape's
+LiveConnect does not offer weak reference support. For easy cross-platform
+support, this call can be made under Internet Explorer, but it will do nothing
+on that platform.
+</ul>
+
+<li>Other Changes:
+<ul>
+<li>To conform to the latest Candidate Recommendation draft specification for
+SVG, support for <code>userSpace</code> units has been dropped.
+<li>Added support for user stylesheets. The SVG Viewer looks for a file named
+<code>SVG-User-Styles.css</code>, according to the following search strategy:
+
+<p><table align="center" width="70%">
+<tr><td align="center" bgcolor="#EEEEEE">Operating System</td><td align="center" bgcolor="#EEEEEE" colspan="2">Paths Searched</td></tr>
+<tr><td valign="top">Windows 2000</td><td><ol>
+<li>My Documents
+<li>\Documents And Settings\&lt;user&gt;\Application Data
+<li>\Documents And Settings\&lt;user&gt;\Local Settings\Application Data
+<li>\Documents And Settings\All Users\Application Data
+</ol></td></tr>
+<tr><td valign="top">Windows 98</td><td><ol>
+<li>My Documents
+</ol></td></tr>
+<tr><td valign="top">Windows NT</td><td><ol>
+<li>\WINNT\Profiles\&lt;user&gt;\Personal
+<li>\WINNT\Profiles\&lt;user&gt;\Application Data
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 8.x</td><td><ol>
+<li>System Folder:Preferences
+<li>Startup Volume:Documents
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(single-user)</td><td><ol>
+<li>System Folder:Preferences
+<li>System Folder:Users:&lt;user&gt;
+<li>Startup Volume:Documents
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(multi-user)</td><td><ol>
+<li>Startup Volume:Users:&lt;user&gt;:Preferences
+<li>Startup Volume:Documents
+</ol></td></tr>
+</table>
+
+<li>The Adobe SVG Viewer now has its own color management support built in.
+This support will attempt to locate a suitable device profile for your
+display. If your computer has color management software installed and a
+monitor profile has been selected, then this monitor profile will also be used
+by the Viewer. If you do not have color management installed, or you have
+disabled it, the Viewer will look for an Adobe Monitor Settings profile on
+your system.  This profile is created by the Adobe Gamma tool (installed with
+other Adobe products), and is usually stored in the same directories as other
+color profiles on the host system.  Failing to find any suitable device
+profile, the Viewer will fall back on the standard sRGB profile and use that
+for all rendering.
+<li>The Netscape plug-in now supports DOM access from Java clients.
+<li>The ActiveX control now supports non-JavaScript (e.g. Visual Basic) event
+handlers.
+<li>Modifications for Windows 2000 compatibility.
+<li>Added an alternate way to pan SVG graphics with the keyboard for
+accessibility.  If the scroll-lock is on, the arrow keys will pan the SVG
+graphic that has the focus.
+<li>Performance enhancements involving multiple simultaneous animations within
+the same SVG file. SVG files with small, widely-spaced simultaneous
+animations should generally display faster in the current version than in
+Version 1.0.
+<li>Mac plug-in performance enhancements.
+<li>Improved support for vertical text.
+<li>Added support for bi-directional text.
+<li>General performance optimizations.
+<li>Modified <code>feImage</code> to work like the <code>use</code> element.
+<li>Updated support for PNG images.
+<li>Memory usage optimizations.
+<li>Added support for animating paths.
+</ul>
+
+</ul>
+
+<P><HR>
+
+
+
+
+<H2><A NAME="contact"></A>Contact Information</H2>
+
+<P>To report bugs and/or provide feedback, please go to the <A
+HREF="http://www.adobe.com/svg/">SVG Zone</A> on Adobe.com.
+
+<H2><A NAME="copyright"></A>Copyright Notice</H2>
+
+<P>&copy; Copyright 1998-2001 by Adobe Systems Incorporated. All rights reserved.
+
+<P>Adobe and Illustrator are trademarks of Adobe Systems
+Incorporated. Windows and Windows NT are registered trademarks of
+Microsoft Corporation in the United States and/or other countries. Mac
+OS and TrueType are trademarks of Apple Computer, Inc. in the United
+States and/or other countries. All other trademarks are property of
+their respective owners.
+
+</BODY>
+</HTML>
+

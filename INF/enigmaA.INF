@@ -1,0 +1,89 @@
+; Localized	07/31/2002 10:00 AM (GMT+08:00)	2.0.0.0  ca504a.inf
+; Composite Driver Information
+; Copyright (c) 2002 Sunplus Tech
+; Manufacturer: Sunplus Tech
+
+[Version]
+signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%USBCamera%
+LayoutFile=LAYOUT.INF
+DriverVer=07/31/2002,2.0.0.0
+;CatalogFile=enigma.cat
+;CatalogFile=CA504A.cat
+
+[DestinationDirs]
+DefaultDestDir=11               ; LDID_SYS
+
+; =================== Class Sections ===========================
+
+[ClassInstall]
+Addreg=USBClassReg
+
+[USBClassReg]
+HKR,,,,%USBClassName%
+HKR,,Icon,,-20
+
+
+; =================== Table of content =========================
+
+[Manufacturer]
+%Sunplus.MfgName%=Sunplus.Section
+
+[SourceDisksNames]
+;1="USB Camera Disk",USBCameraVideo,,
+1="Enigma Driver Disk", "Enigma.cab",0 ,
+[SourceDisksFiles]
+;CA504A.cat=1
+
+; =================== Sunplus ==================================
+
+[Sunplus.Section]
+%CAMERA.DeviceDesc%=StandardHub.Dev,USB\VID_04Fc&PID_504a
+%CAMERA.DeviceDesc%=StandardHub.Dev,USB\VID_05DA&PID_1018
+
+; =================== Global ==================================
+
+[StandardHub.Dev]
+AddReg=Hub.AddReg
+CopyFiles=Hub.CopyFiles
+
+[StandardHub.Dev.NT]
+CopyFiles=Hub.CopyFiles.NT
+
+[StandardHub.Dev.NT.Services]
+AddService = usbhub, 0x00000002, StandardHub.AddService
+
+[StandardHub.AddService]
+DisplayName    = %StandardHub.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\usbhub.sys
+LoadOrderGroup = Base
+
+[HUB.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,usbhub.sys
+
+[HUB.CopyFiles]
+
+[USB.CopyFiles.NT]
+
+[ControlFlags]
+
+[DestinationDirs]
+DefaultDestDir = 11             ; System directory
+
+[Strings]
+USBClassName= "Universal serial bus controller"
+StandardHub.SvcDesc= "DSC Composite USB Device"
+
+USBCamera=         "enigma"
+Sunplus.MfgName=   "enigma"
+CAMERA.DeviceDesc= "enigma"
+
+;USBCamera=         "Sunplus"
+;Sunplus.MfgName=   "Sunplus"
+;CAMERA.DeviceDesc= "Icatch(II) Composite USB Device"

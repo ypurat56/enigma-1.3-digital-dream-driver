@@ -1,0 +1,11 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\UI Scheme]
+@="Default"
+"TIPTRANS"=dword:0000000A
+	  
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\UI Scheme\Default]
+"UI Folder"="Default"
+"VALUE"=dword:00000000
+
+

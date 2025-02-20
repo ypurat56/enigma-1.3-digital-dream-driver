@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+<TITLE>Adobe® SVG Viewer</TITLE>
+<STYLE TYPE="TEXT/CSS"> BODY {background-color: white; margin: 20pt; font-size: 12px; line-height: 18px; font-family: Arial, Sans-Serif} H1, H2 {color: black} H3 {color: red} .H3I {margin-left: 1em} P {text-align: justify}
+</STYLE>
+</HEAD>
+<BODY link="#cc0000" alink="#cc0000" vlink="#996666">
+
+
+<CENTER>
+<H1>Adobe<SUP>®</SUP> SVG Viewer voor Windows</H1>
+<H2>Releaseopmerkingen</H2>
+<H3>Versie 2.0 (Build 55, 3/14/01)</H3>
+</CENTER>
+
+
+<H2>Inhoud</H2>
+<UL>
+<LI><A HREF="#about">De SVG Viewer</A>
+<LI><A HREF="#sysreq">Systeemvereisten</A>
+<LI><A HREF="#installing">De SVG Viewer installeren</A>
+<LI><A HREF="#copyplugin">Invoegtoepassingen van Netscape naar andere browsers kopiëren</A>
+<LI><A HREF="#viewing">SVG-bestanden in uw webbrowser bekijken</A>
+<LI><A HREF="#converting">Tekeningen en afbeeldingen omzetten naar SVG</A>
+<LI><A HREF="#tips">Tips en Hints</A>
+<LI><A HREF="#problems">Bekende problemen</A>
+<LI><A HREF="#history">Revisiegeschiedenis</A>
+<LI><A HREF="#contact">Contactinformatie</A>
+<LI><A HREF="#copyright">Copyrightinformatie</A>
+<LI><A HREF="http://www.adobe.com/svg/">Meer informatie over de ondersteuning van Adobe voor SVG</A>
+</UL>
+
+<P><HR>
+
+<H2><A NAME="about"></A>De SVG Viewer</H2>
+
+<P>De SVG Viewer van Adobe ondersteunt vele mogelijkheden die in de op 2 november 2000 gepubliceerde conceptspecificatie <a href="http://www.w3.org/TR/2000/CR-SVG-20001102/index.html">Candidate Recommendation</a> van SVG worden beschreven. Houd er rekening mee dat deze specificatie in ontwikkeling is en nog zal worden aangepast.
+
+
+<H2><A NAME="installing"></A>De SVG Viewer installeren</H2>
+<P><OL>
+<LI>Sluit voordat u het programma installeert, alle toepassingen die u hebt gebruikt om SVG-bestanden met een oude versie van de viewer te bekijken.
+<LI>Voer het installatieprogramma uit. De meest recente installatieprogramma's kunt u downloaden vanaf <a href="http://www.adobe.com/svg/viewer/install">http://www.adobe.com/svg/viewer/install</a>.
+</OL>
+
+<H2><A NAME="copyplugin"></A>Invoegtoepassingen van Netscape naar andere browsers kopiëren</H2>
+<P>Als u een andere versie van Netscape installeert die door de invoegtoepassing van Netscape wordt ondersteund, kunt u de volgende bestanden naar de map met invoegtoepassingen kopiëren om SVG-bestanden vanuit die browser weer te geven:
+<UL>
+<LI>NPSVGVw.dll
+<LI>SVGView.dll
+<LI>SVGViewer.zip
+</UL>
+
+
+<H2><A NAME="viewing"></A>SVG-bestanden in uw webbrowser bekijken</H2>
+
+<P>Als u de SVG Viewer van Adobe eenmaal hebt geïnstalleerd, kunt u elk SVG-bestand dat u vanuit Illustrator exporteert, in elke ondersteunde webbrowser weergeven.</P>
+
+<H2><A NAME="converting"></A>Tekeningen en afbeeldingen omzetten naar SVG</H2>
+
+<P>U kunt SVG-bestanden vanuit Illustrator 9 exporteren. U kunt uw tekeningen en afbeeldingen in Illustrator maken, deze als SVG-bestanden exporteren en vervolgens alle beschikbare interactieve JavaScript-onderdelen, animaties of filtereffecten toevoegen.</P>
+
+<H2><A NAME="tips">Tips en Hints</H2>
+
+<UL>
+<LI>Opmaakkenmerken (of opmaakkenmerken waarbij gebruik wordt gemaakt van verwijzingen) worden sneller weergegeven dan ingesloten opmaakmodellen.
+<LI>Gebruik voor de kenmerken <code>x</code>, <code>y</code>, <code>breedte</code> en <code>hoogte</code> van <code>filter</code>elementen geen hogere percentages dan strikt noodzakelijk is om het gebied waarvoor het filtereffect moet worden berekend zo klein mogelijk te houden. Hierdoor worden grafische elementen veel sneller weergegeven.
+<li>U kunt het SVG-documentobject vanuit SVG-gebeurtenisafhandelingen ophalen door <code>getTarget</code> aan te roepen in het <code>evt</code>-object dat is doorgevoerd. Bijvoorbeeld: <pre>
+  // Haal het SVG-documentobject op:
+  var directTarget = evt.getTarget();
+  var svgDocument;
+  if( directTarget.getNodeType() != 9 )  // if not DOCUMENT_NODE
+    svgDocument = directTarget.getOwnerDocument();
+  else
+    svgDocument = directTarget;
+</pre>
+</UL>
+
+<P><HR>
+
+
+
+<H2><A NAME="sysreq"></A>Systeemvereisten</H2>
+<UL>
+<LI>Windows 95, 98, 2000 of NT 4.0
+<LI>Netscape Navigator of Communicator versie 4.0 tot en met 4.75 of Internet Explorer 4.0 of hoger. Netscape 6 wordt <emph>niet</emph> ondersteund.
+<LI>13 MB vrije ruimte op de vaste schijf
+<LI>32 MB RAM aanbevolen
+</UL>
+
+<P><HR>
+<H2><A NAME="problems"></A>Bekende problemen met de SVG Viewer</H2>
+
+<H3><A NAME="problems_all"></A>Alle browsers</H3>
+<OL>
+
+<li>Het is mogelijk dat elementen vlak bij de rand van een SVG-afbeelding geen mouseout-gebeurtenis ontvangen.
+
+</OL>
+
+<H3><A NAME="problems_ie"></A>Internet Explorer</H3>
+<OL>
+<li>U moet Internet Explorer 4 of hoger hebben geïnstalleerd om de SVG Viewer als een ActiveX-besturingselement in andere toepassingen te kunnen gebruiken (bijvoorbeeld in Microsoft Office).
+<li>Als u meer dan één venster opent met een koppeling naar hetzelfde SVG-bestand en het SVG-bestand is ingesloten met behulp van de HTML-code &lt;embed&gt;, wordt, als u één van de vensters afdrukt, het venster mogelijk afgedrukt op basis van de wijzigingen in de DOM in het andere venster. Dit wordt veroorzaakt door de beperkingen van Internet Explorer.
+<li>Door deze beperkingen van Internet Explorer is het niet mogelijk om vanuit een script dat in een SVG-bestand is gedefinieerd, de eigenschappen van andere vensters weer te geven.
+<li>Het gebruik van de invoegtoepassing Adobe SVG Netscape wordt in Internet Explorer onder Windows <b>niet</b> ondersteund.
+</OL>
+
+<H3><A NAME="problems_nn"></A>Netscape</H3>
+<OL>
+
+<li><!--ABTS#392459-->Invoegtoepassingen van Netscape 4.x kunnen <code>onunload</code>-scripts niet uitvoeren omdat op het moment dat de invoegtoepassing door Netscape op de hoogte wordt gesteld van het feit dat de invoegtoepassing wordt verwijderd, de scriptomgeving van de invoegtoepassing al is afgesloten.
+<li><!--ABTS#390346-->Netscape 6.0 rapporteert fouten als er pagina's met invoegtoepassingen worden afgedrukt en kan ingesloten inhoud vervolgens niet afdrukken. Netscape geeft twee waarschuwingen van de invoegtoepassing weer. Als u deze waarschuwingen negeert, heeft dit als resultaat dat Netscape de HTML-pagina afdrukt, maar dat de gebieden voor de SVG-inhoud leegblijven.
+<li>Als u een webpagina afsluit, kan Netscape meestal de invoegtoepassing Adobe SVG Viewer verwijderen voordat de browser alle scripts beëindigt die in de HTML worden uitgevoerd. U moet daarom ook voorzichtig zijn als u scripts schrijft waarmee u wilt controleren of de invoegtoepassing nog steeds is geladen voordat u vanuit <code>setTimeout</code> of <code>setInterval</code>-callbacks in uw HTML JavaScript toegang probeert te krijgen tot de SVG DOM.
+<li>Vanwege de ontwerpbeperkingen van Netscape moet u HTML niet gebruiken in combinatie met het volgende formulier: <pre>
+  &lt;a href="#" onclick="myScriptWhichModifiesSVG()"&gt;
+</pre>
+<p>Het probleem is dat JavaScript op de onclick-gebeurtenis reageert en begint met de uitvoering van het script, maar dat vervolgens ook Netscape reageert omdat u op een koppeling hebt geklikt, waardoor de uitvoering van het JavaScript wordt onderbroken en de huidige pagina niet opnieuw wordt geladen. U kunt dit conflict voorkomen door de code als volgt te herschrijven: <pre>
+  &lt;a href="javascript:myScriptWhichModifiesSVG()"&gt;
+</pre>
+<li><!--ABTS#364416-->Als een JavaScript-gebeurtenisafhandeling een fout bevat, kan elk daaropvolgende JavaScript niet worden uitgevoerd. Dit wordt veroorzaakt door een bug in de wijze waarop Netscape scripts afhandelt die door invoegtoepassingen worden uitgevoerd.
+<li>Vanwege de scriptbeperkingen in Netscape kunt u de URL van een ander frame niet wijzigen vanuit een SVG-gebeurtenisafhandeling.
+<li>Vanwege de script-enginebeperkingen van Netscape kan de <code>alert()</code>-functie mogelijk niet vanuit een SVG-gebeurtenisafhandeling worden aangeroepen waardoor daaropvolgend JavaScript mogelijk niet meer kan worden uitgevoerd. In elk modaal Netscape-venster komen vergelijkbare problemen voor. Dit geldt ook voor het venster voor het instellen van de beveiligingsbevoegdheden. Het lijkt erop dat deze bug in Netscape 4.75 gedeeltelijk door Netscape is opgelost, maar niet in Windows 98.
+<li><!--ABTS#392481-->Netscape bevat een bug die van invloed is op invoegtoepassingen die gebruikmaken van JavaScript. Als u een pagina laadt met een invoegtoepassing die gebruikmaakt van JavaScript, en vervolgens Java uitschakelt en de browser afsluit, loopt Netscape vast.
+<li><!--ABTS#389988-->U kunt in Netscape vanuit een SVG-script niet altijd toegang krijgen tot de <code>document.embeds[]</code>-array. Om dit probleem te voorkomen gebruikt u <code>document.mySVG</code>, waarbij <code>mySVG</code> de naam is van het ingesloten object.
+
+<li><!--ABTS#364417-->Fouten in scripts die door Netscape 4.x-invoegtoepassingen worden uitgevoerd, worden niet in het consolevenster van Javascript weergegeven.
+<li><!--ABTS#364461-->Netscape 4.x verliest, telkens als een invoegtoepassing een script uitvoert, iets van zijn geheugencapaciteit.
+<li><!--ABTS#364524-->Netscape 4.x loopt vast als u het programma sluit als u het programma eerder hebt gestart door te dubbelklikken om een webpagina met inhoud van de invoegtoepassing LiveConnect te laden.
+<li>Als u "Afdrukvoorbeeld" in Netscape gebruikt voor een pagina die invoegtoepassingen bevat (bijvoorbeeld de Adobe SVG Viewer), loopt Netscape vast. Netscape loopt ook vast als u een pagina probeert af te drukken met invoegtoepassingen die Acrobat Distiller gebruiken.
+<li>Als u Netscape 4.0x gebruikt om hetzelfde SVG-bestand in twee vensters weer te geven en in dat bestand een globale JavaScript-functie voor het vensterobject wordt gebruikt, wordt JavaScript in sommige gevallen in het tweede venster niet geïnitialiseerd. Om dit probleem te voorkomen voert u een upgrade uit naar een recentere versie van Netscape.
+<li>Vanwege een bug in Netscape 6 wordt in Netscape 6 geen contextmenu weergegeven als u in het SVG-gebied op de rechtermuisknop klikt, maar wordt het contextmenu van Netscape weergegeven.
+</OL>
+
+<P><HR>
+
+
+<H2><A NAME="history"></A>Revisiegeschiedenis</H2>
+
+<h3>Wijzigingen sinds versie 1.0 van de Adobe SVG Viewer</h3>
+<ul>
+
+<li>Elementen en kenmerken:
+<ul>
+<li>Toegevoegde ondersteuning voor de volgende elementen: <code>altGlyph</code>, <code>altGlyphDef</code>, <code>font</code>, <code>font-face</code>, <code>glyph</code>, <code>glyphRef</code>, <code>hkern</code>, <code>missing-glyph</code>, <code>mpath</code>, <code>pattern</code> en <code>vkern</code>.
+<li>Toegevoegde ondersteuning voor de SVG Presentation-kenmerken.
+<li>Geen ondersteuning meer voor het gebruik van het <code>use</code>-element van <code>symbol</code>-elementen.
+<li>Toegevoegde ondersteuning voor het kenmerk <code>spreadMethod</code> voor kleurovergangen.
+<li>Toegevoegde ondersteuning voor het nieuwe kenmerk <code>primitiveUnits</code> voor filtereffecten.
+<li>Toegevoegde ondersteuning voor de "discrete" modus voor <code>feComponentTransfer</code>.
+</ul>
+
+<li>CSS-eigenschappen:
+<ul>
+<li>Toegevoegde ondersteuning voor de volgende CSS-eigenschappen: <code>alignment-baseline</code>, <code>color-interpolation</code>, <code>direction</code>, <code>dominant-baseline</code>, <code>flood-color</code>, <code>flood-opacity</code>, <code>kerning</code>, <code>lighting-color</code>, <code>pointer-events</code> en <code>unicode-bidi</code>. De ondersteuning voor de eigenschap <code>pointer-events</code> bevat geen ondersteuning voor doorzichtigheid van rasterelementen.
+<li>Toegevoegde ondersteuning voor de eigenschap <code>font-variant</code>, maar alleen als de eigenschap wordt toegepast op SVG-lettertypen.
+<li>Geen ondersteuning meer voor de eigenschap <code>baseline-identifier</code> die in de meest recent ondersteunde specificatie is vervangen door de eigenschap <code>alignment-baseline</code>.
+<li>De standaardwaarden voor de eigenschappen <code>clip-rule</code> en <code>fill-rule</code> zijn gewijzigd van <code>even-odd</code> in <code>non-zero</code> en komen overeen met de wijzigingen in de meest recent ondersteunde specificatie.
+<li>In de meest recente conceptspecificatie van de Candidate Recommendation voor SVG is de manier waarop CSS-eenheden worden afgehandeld, gewijzigd. Deze worden nu geconverteerd naar gebruikersruimte bij het parseren en worden niet meer geconverteerd tijdens de weergave. Hierdoor is de manier waarop de functie voor in- en uitzoomen werkt, aanzienlijk veranderd.
+</ul>
+
+<li>DOM:
+<ul>
+<li>De ondersteuning voor DOM Level 2 van de Viewer voldoet nu aan de DOM 2 Candidate Release-specificatie. Deze ondersteuning geldt echter niet voor de <code>keyEvent</code>-interface die niet in de DOM 2 Candidate Release is gespecificeerd. Ondersteuning voor de <code>keyEvent</code>-interface voldoet aan de DOM 2-versie van die interface die als laatste is gepubliceerd in de conceptspecificatie van september 1999.
+<li>Toegevoegde ondersteuning voor de <code>SVGRect</code>-interface.
+<li>Toegevoegde ondersteuning voor de <code>SVGPoint</code>-interface. De methode <code>matrixTransform</code> wordt echter niet ondersteund
+<li>Toegevoegde ondersteuning voor de interface <code>SVGTextContentElement</code>, behalve voor de eigenschappen <code>getTextLength</code> en <code>getLengthAdjust</code>.
+<li>Toegevoegde ondersteuning voor <code>rootElement</code>, <code>getRootElement</code>, <code>currentScale</code>, <code>getCurrentScale</code>, <code>setCurrentScale</code>, <code>currentTranslate</code>, <code>getCurrentTranslate</code> en <code>setCurrentTranslate</code> in de <code>SVGDocument</code>-interface.
+<li>Toegevoegde ondersteuning voor de DOM2-methoden <code>hasAttribute</code> en <code>hasAttributeNS</code> in de <code>Element</code>-interface.
+<li>Toegevoegde ondersteuning voor een nieuwe, niet-standaard methode in het <code>Document</code>-object met de naam <code>garbageCollect</code>. Deze methode accepteert geen parameters en geeft geen resultaten. Als deze methode wordt aangeroepen, wordt elk Node-object dat eerder uit de structuur is verwijderd, vrijgemaakt. Als een script een bewerking heeft uitgevoerd die resulteert in het verwijderen van een node uit de structuur op het moment dat het script de verwijderde (en teruggegeven) node niet meer nodig heeft, moet het script het object <code>garbageCollect</code> in het SVG-document aanroepen. Als de methode eenmaal is aangeroepen, is elke node-verwijzing in een script die geen deel uitmaakte van het document op het moment dat <code>garbageCollect</code> werd aangeroepen, ongeldig als er toegang tot de bijbehorende methoden wordt gezocht. Dit is alleen een voordeel in Netscape-browsers omdat LiveConnect van Netscape geen zwakke verwijzigingsondersteuning biedt. Voor ondersteuning voor meerdere platforms kan deze aanroep in Internet Explorer worden uitgevoerd, maar in Internet Explorer heeft deze aanroep geen effect.
+</ul>
+
+<li>Overige wijzigingen:
+<ul>
+<li>Om aan de meest recente Candidate Recommendation-conceptspecificatie voor SVG te voldoen is de ondersteuning voor <code>userSpace</code>-eenheden verwijderd.
+<li>Toegevoegde ondersteuning voor gebruikersopmaakmodellen. De SVG Viewer zoekt naar een bestand met de naam <code>SVG-User-Styles.css</code> en zoekt daarbij als volgt:
+
+<p><table align="center" width="70%">
+<tr><td align="center" bgcolor="#EEEEEE">Besturingssysteem</td><td align="center" bgcolor="#EEEEEE" colspan="2">Doorzochte paden</td></tr>
+<tr><td valign="top">Windows 2000</td><td><ol>
+<li>Mijn documenten
+<li>\Documents And Settings\&lt;user&gt;\Application Data
+<li>\Documents And Settings\&lt;user&gt;\Local Settings\Application Data
+<li>\Documents And Settings\All Users\Application Data
+</ol></td></tr>
+<tr><td valign="top">Windows 98</td><td><ol>
+<li>Mijn documenten
+</ol></td></tr>
+<tr><td valign="top">Windows NT</td><td><ol>
+<li>\WINNT\Profiles\&lt;user&gt;\Personal
+<li>\WINNT\Profiles\&lt;user&gt;\Application Data
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 8.x</td><td><ol>
+<li>Systeemmap:Voorkeuren
+<li>Startup Volume:Documents
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(één gebruiker)</td><td><ol>
+<li>Systeemmap:Voorkeuren
+<li>System Folder:Users:&lt;user&gt;
+<li>Startup Volume:Documents
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(meerdere gebruikers)</td><td><ol>
+<li>Startup Volume:Users:&lt;user&gt;:Preferences
+<li>Startup Volume:Documents
+</ol></td></tr>
+</table>
+
+<li>De SVG Viewer van Adobe heeft nu een eigen ingebouwde ondersteuning voor het beheer van kleuren. Met deze ondersteuning wordt geprobeerd een geschikt apparaatprofiel voor uw beeldscherm te vinden. Als voor uw beeldscherm software voor het beheer van kleuren is geïnstalleerd en er een monitorprofiel is geselecteerd, wordt dit profiel ook door de Viewer gebruikt. Als u geen software voor kleurbeheer hebt geïnstalleerd, of u deze software hebt uitgeschakeld, zoekt de Viewer op uw systeem naar een monitorprofiel van Adobe.  Dit profiel is gemaakt met behulp van het programma Adobe Gamma (dat samen met andere Adobe-producten is geïnstalleerd) en is in het algemeen in dezelfde directory opgeslagen als de andere kleurprofielen op het hostsysteem.  Als er geen geschikt apparaatprofiel kan worden gevonden, gebruikt de Viewer het standaard sRGB-profiel voor het weergeven van bestanden.
+<li>De Netscape-invoegtoepassing ondersteunt nu DOM-toegang vanaf Java-clients.
+<li>Het ActiveX-besturingselement ondersteunt nu ook niet-JavaScript-gebeurtenisafhandelingen (bijvoorbeeld Visual Basic).
+<li>Wijzigingen voor de compatibiliteit met Windows 2000.
+<li>Er is een alternatieve manier toegevoegd om SVG-afbeeldingen met behulp van het toetsenbord te draaien zodat ze beter toegankelijk zijn.  Als Scroll Lock is ingeschakeld, kunt u met de pijltoetsen de SVG-afbeelding die de focus heeft, draaien.
+<li>Verbeterde prestaties voor het gelijktijdig weergeven van meerdere animaties in hetzelfde SVG-bestand. SVG-bestanden met kleine animaties die verdeeld over een groot gebied en gelijktijdig worden weergegeven, worden in de huidige versie sneller weergegeven dan in versie 1.0.
+<li>Verbeterde prestaties van Mac-invoegtoepassingen.
+<li>Verbeterde ondersteuning voor verticale tekst.
+<li>Toegevoegde ondersteuning voor bidirectionele tekst.
+<li>Algemene prestatieverbeteringen.
+<li>Gewijzigde <code>feImage</code> die nu werkt als het <code>use</code>-element.
+<li>Bijgewerkte ondersteuning voor PNG-afbeeldingen.
+<li>Verbeterd geheugengebruik.
+<li>Toegevoegde ondersteuning voor animatiepaden.
+</ul>
+
+</ul>
+
+<P><HR>
+
+
+
+
+<H2><A NAME="contact"></A>Contactinformatie</H2>
+
+<P>Als u bugs wilt rapporteren of opmerkingen hebt, gaat u naar de <A HREF="http://www.adobe.com/svg/">SVG Zone</A> op Adobe.com.
+
+<H2><A NAME="copyright"></A>Copyrightinformatie</H2>
+
+<P>© Copyright 1998-2001 Adobe Systems Incorporated. Alle rechten voorbehouden.
+
+<P>Adobe en Illustrator zijn handelsmerken van Adobe Systems Incorporated. Windows en Windows NT zijn geregistreerde handelsmerken van Microsoft Corporation in de Verenigde Staten en/of andere landen. Mac OS en TrueType zijn handelsmerken van Apple Computer, Inc. in de Verenigde Staten en/of andere landen. Alle andere handelsmerken zijn het eigendom van hun respectieve eigenaren.
+
+</BODY>
+</HTML>
+

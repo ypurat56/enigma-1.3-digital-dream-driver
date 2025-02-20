@@ -1,0 +1,514 @@
+; Localized	08/29/2002 15:35 PM (GMT+08:00)	2.1.9.3  ca504av.inf 
+; Video Capture Driver installation information 
+; Copyright (c) 2001-2002 Sunplus Tech 
+; Manufacturer: Sunplus Tech
+
+[Version]
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%ProviderName%
+DriverVer=08/29/2002,2.1.9.3
+;CatalogFile.NTx86=CA504A.cat
+;CatalogFile=enigma.cat
+
+[CAMERA.DeviceData]
+Server=local
+UI DLL=sti.dll
+UI Class ID={5d8ef5a3-ac13-11d2-a093-00c04f72dc3c}
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[DestinationDirs]
+DefaultDestDir=11
+CAMERA.CopySystem=10,system
+;CAMERA.CopySystem=10,system32\drivers
+CAMERA.CopyDrivers=10,system32\drivers
+CAMERA.CopyTwain=10,twain_32\%TwainName%
+CAMERA.CopyDLL=11
+CAMERA.CopyIni=10
+CAMERA.CopyWebHelp=10,twain_32\Enigma\webhelp
+
+[SourceDisksNames]
+;1=%DiskName%,file.tag,,,
+1="Enigma Driver Disk", "Enigma.cab",0 ,
+
+[SourceDisksFiles]
+Ca504av.sys=1
+SP5X_32.DLL=1
+Dext504.ax=1
+enigma.INI=1
+enigma.DS=1
+enigma.dll=1
+TW504A.INI=1
+TW504A.SRC=1
+USB_CAM.DLL=1
+USB_CAM.INI=1
+_blank.htm=1
+_Topics0.gif=1
+_Topics.gif=1
+A_all.gif=1
+About.htm=1
+AccInt.htm=1
+Acquire.gif=1
+AVI.gif=1
+AVICr.gif=1
+AVIplay.gif=1
+AVIsave.gif=1
+bsscdht1.js=1
+bsscdht2.js=1
+bsscdhtm.js=1
+bsscnav1.gif=1
+bsscnav2.gif=1
+bsscnav3.gif=1
+bsscnav4.gif=1
+bsscnav5.gif=1
+bsscnav6.gif=1
+bsscnav7.gif=1
+bssctoc4.gif=1
+C_AVI.gif=1
+cam_ns.css=1
+DC_Int.htm=1
+Dnimage.htm=1
+Download.gif=1
+eHelp.xml=1
+Exit.gif=1
+ftsbody.htm=1
+ftsdhtml.htm=1
+ftsform.htm=1
+help.gif=1
+idxbody.htm=1
+idxdhtml.htm=1
+idxform.htm=1
+idxlist.htm=1
+kc100.gif=1
+mn100v1.gif=1
+navframe.htm=1
+navpane1.htm=1
+bsscnav8.gif=1
+bssctab0.gif=1
+bssctab1.gif=1
+bssctab2.gif=1
+bssctab3.gif=1
+bssctab4.gif=1
+bssctab5.gif=1
+bssctab6.gif=1
+bssctoc1.gif=1
+bssctoc2.gif=1
+bssctoc3.gif=1
+enigma.htm=1
+avi.jpg=1
+navpane2.htm=1
+tabframe.htm=1
+tocdhtml.htm=1
+toclist.htm=1
+useAVI.htm=1
+webhelp3.js=1
+Welcome.htm=1
+Zoom.gif=1
+enigma.jpg=1
+AVI.bmp=1
+
+
+; =================== Table of content =========================
+
+[Manufacturer]
+%Sunplus.MfgName%=Sunplus.Section
+
+; =================== Sunplus ==================================
+
+[Sunplus.Section]
+%CAMERA.DeviceDesc%=Ca504A.Device,USB\VID_04FC&PID_504A&MI_00
+%CAMERA.DeviceDesc%=Ca504A.Device,USB\VID_05Da&PID_1018&MI_00
+
+; --------------------------------------------------------------
+; This case for CA504A
+
+[Ca504A.Device]
+Include=    ks.inf,kscaptur.inf,ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration,Ca504A.DSHEXT.Registration
+AddReg=     Ca504A.AddReg,Ca504A.Uninstall.AddReg,Ca504A.DextGUID.AddReg
+UpdateInis= CAMERA.UpdateInis
+CopyFiles=  CAMERA.CopyDrivers,CAMERA.CopyTwain,CAMERA.CopyIni,CAMERA.CopyDLL,CAMERA.CopySystem,CAMERA.CopyWebHelp
+
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x00000001
+DeviceData=CAMERA.DeviceData
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[Ca504A.Device.NT]
+Include=    ks.inf,kscaptur.inf,ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT,Ca504A.DSHEXT.Registration.NT
+AddReg=     Ca504A.AddReg,Ca504A.Uninstall.AddReg.NT,Ca504A.DextGUID.AddReg
+UpdateInis= CAMERA.UpdateInis
+CopyFiles=  CAMERA.CopyDrivers,CAMERA.CopyTwain,CAMERA.CopyIni,CAMERA.CopyDLL,CAMERA.CopySystem,CAMERA.CopyWebHelp
+
+SubClass=StillImage
+DeviceType=3
+DeviceSubType=0x1
+Capabilities=0x00000001
+DeviceData=CAMERA.DeviceData
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[Ca504A.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,%DriverFullName%
+HKR,,PageOutWhenUnopened,3,01
+;HKR,,PowerDownWhenUnopened,3,01
+HKR,,DontSuspendIfStreamsAreRunning,3,01
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+HKR,,OkToHibernate,3,01
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\%CAMERA.ProductName%\UCAM]
+HKLM,Software\%Ca504A.ProductName%\Ucam,"TWAIN Use Button",0x10001,00,00,00,00
+HKLM,Software\%Ca504A.ProductName%\Ucam,"ProductName",0,%TwainSourceName%
+HKLM,Software\%Ca504A.ProductName%\Ucam,"Version",0,"V1.3.5.1"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\%Ca504A.ProductName%\CONTROL]
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"Flip",0x10001,00
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"IMAGETYPE",0x10001,6  ; 420 compression
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"PacketSizeMax",0x10001,6  ; 7: Max PacketSize= 1023
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"ApplyRegistryValues",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"QTableIndex",0x10001,3 ; 0:Q50,1:Q70,2:Q80,3:Q85
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"Simulate160120",0x10001,1 ; 0:F/W support, 1:SW simulate
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"NoSensorSize",0x10001,0 ; 0:F/W support, 1:SW simulate
+
+;Hide
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"DebugMessage",0x10001,0
+
+;Initial
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"DriverInitial",0x10001,0  ;0:F/W  1:Driver  2:Registry
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"SensorType",0x10001,0     ;0:Signal, 1:Motolora 1.3M
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"SoftwareAeAwb",0x10001,0  ;0:by F/W, 1:by S/W
+
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"TotalSyncByte",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"SyncByte0",0x10001,254		;CA503:255, CA504:254
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"SyncByte1",0x10001,1		;CA503:1, CA504:None
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"NextSyncByte",0x10001,128		;CA503:255, CA504:128
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"PropertyByteOffset",0x10001,9	;CA503:15, CA504:9
+
+;AEAWB
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"EnableAE",0x10001,01
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"AEiSetting",0x10001,3   ; 4: 30000
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"AWBiSetting",0x10001,4  ; sec
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"AETYPE",0x10001,03
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"AEBANDINGTYPE",0x10001,2	;1:Normal, 2:Band 60Hz, 3:Band 50Hz
+HKLM,Software\%Ca504A.ProductName%\CONTROL,"ShowFrameRate",0x10001,0  ; 1: show frame, 2: show compratio, 3: show true status
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\%Ca504A.ProductName%\VENDORCOMMAND]
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetQtable_Request",0x10001,0x26,0,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetQtable_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetQtable_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetQtable_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOnGpioPower_Request",0x10001,52 ;0x34
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOnGpioPower_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOnGpioPower_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOnGpioPower_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetImageType_Request",0x10001,39 ;0x27
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetImageType_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetImageType_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetImageType_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStart_Request",0x10001,49 ;0x31
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStart_Index",0x10001,4
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStart_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStart_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStop_Request",0x10001,49 ;0x31
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStop_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStop_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetPcCamStop_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetCamIdle_Request",0x10001,50 ;0x32
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetCamIdle_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetCamIdle_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetCamIdle_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeAwbFlag_Request",0x10001,0x24,0,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeAwbFlag_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeAwbFlag_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeAwbFlag_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOffGpioPower_Request",0x10001,52 ;0x34
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOffGpioPower_Index",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOffGpioPower_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"TurnOffGpioPower_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SizePcCamSize_Request",0x10001,37 ;0x25
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SizePcCamSize_Index",0x10001,4
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SizePcCamSize_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SizePcCamSize_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeBandingFlag_Request",0x10001,0x24,0,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeBandingFlag_Index",0x10001,8
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeBandingFlag_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SetAeBandingFlag_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SyncDataTime_Request",0x10001,0x29,0,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SyncDataTime_Index",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SyncDataTime_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"SyncDataTime_Length",0x10001,8
+
+;Color Setting Vendor Command
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Brightness_Request",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Brightness_Index",0x10001,0xa7,0x21,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Brightness_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Brightness_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Contrast_Request",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Contrast_Index",0x10001,0xa8,0x21,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Contrast_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Contrast_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueL_Request",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueL_Index",0x10001,0xad,0x21,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueL_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueL_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueH_Request",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueH_Index",0x10001,0xac,0x21,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueH_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"HueH_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Saturation_Request",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Saturation_Index",0x10001,0xae,0x21,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Saturation_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Saturation_Length",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Sharpness_Request",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Sharpness_Index",0x10001,0xa3,0x21,0,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Sharpness_Value",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VENDORCOMMAND,"Sharpness_Length",0x10001,1
+
+;Color Setting
+HKLM,Software\%Ca504A.ProductName%\VIDEOPROCAMP,"ApplyRegistryValues",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VIDEOPROCAMP,"Brightness",0x10001,128
+HKLM,Software\%Ca504A.ProductName%\VIDEOPROCAMP,"Contrast",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VIDEOPROCAMP,"Hue",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\VIDEOPROCAMP,"Saturation",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\VIDEOPROCAMP,"Sharpness",0x10001,0
+
+;Color Setting Default
+HKLM,Software\%Ca504A.ProductName%\DEFAULT,"Brightness",0x10001,128
+HKLM,Software\%Ca504A.ProductName%\DEFAULT,"Contrast",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\DEFAULT,"Hue",0x10001,0
+HKLM,Software\%Ca504A.ProductName%\DEFAULT,"Saturation",0x10001,1
+HKLM,Software\%Ca504A.ProductName%\DEFAULT,"Sharpness",0x10001,0x0
+
+[Ca504A.Uninstall.AddReg]
+;HKLM,%UIF%\%Ca504A.ProductName%,"DisplayName",,%UninstallDisplayName%
+;HKLM,%UIF%\%Ca504A.ProductName%,"UninstallString",,"Rundll32 advpack.dll,LaunchINFSectionEx %10%\%Ca504A.UninstallIniFullName%, Ca504AUnInstall"
+
+[Ca504A.Uninstall.AddReg.NT]
+;HKLM,%UIF%\%Ca504A.ProductName%,"DisplayName",,%UninstallDisplayName%
+;HKLM,%UIF%\%Ca504A.ProductName%,"UninstallString",,"Rundll32 advpack.dll,LaunchINFSectionEx %10%\%Ca504A.UninstallIniFullName%, Ca504AUnInstall"
+
+[Ca504A.Device.Services]
+AddService = %DriverName%,0x00000002,Ca504A.ServiceInstall
+
+[Ca504A.Device.NT.Services]
+AddService = %DriverName%,0x00000002,Ca504A.ServiceInstall
+
+[Ca504A.ServiceInstall]
+DisplayName   = %CAMERA.DeviceDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_AUTO_START%  ;2002,4,11
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %10%\System32\Drivers\%DriverFullName%
+
+[Ca504A.Device.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,Ca504A.VideoCapture
+AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,Ca504A.VideoCapture
+
+[Ca504A.Device.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,Ca504A.VideoCapture
+AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,Ca504A.VideoCapture
+;HKR,PinFactory\1\Interfaces\{5BB95400-52BB-11d2-BA41-00A0C90D2B05},,,
+
+[Ca504A.VideoCapture]
+AddReg=Ca504A.VideoCapture.AddReg
+
+[Ca504A.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%Ca504A.Capture%
+;VideoProcAmp Property Page
+HKR,PageAliases,"{71F96464-78F3-11d0-A18C-00A0C9118956}",1,31,E8,C2,3D, 13,47, d2,11, 0xba, 0x41, 0x0, 0xa0, 0xc9, 0xd, 0x2b, 0x5
+
+[Ca504A.DSHEXT.Registration]
+AddReg=Ca504A.PlugIns,Ca504A.Filters
+CopyFiles=Ca504A.Filters.Files
+
+[Ca504A.DSHEXT.Registration.NT]
+AddReg=Ca504A.PlugIns,Ca504A.Filters
+CopyFiles=Ca504A.Filters.Files
+
+[Ca504A.Filters]
+;Custom Property Page
+HKCR,CLSID\%CAMERA.GUID_AX2%,,,%PropPage_CustomCameraProp%
+HKCR,CLSID\%CAMERA.GUID_AX2%\InprocServer32,,,%CAMERA.DextFullName%
+HKCR,CLSID\%CAMERA.GUID_AX2%\InprocServer32,ThreadingModel,,Both
+HKLM,System\CurrentControlSet\Control\MediaSets\%CAMERA.GUID_AX2%,,,%PropPage_CustomCameraProp%
+HKLM,System\CurrentControlSet\Control\MediaSets\%CAMERA.GUID_AX1%\PropertyPages\%CAMERA.GUID_AX2%,,,%PropPage_CustomCameraProp%
+
+;VideoProcAmp Property Page
+HKCR,CLSID\{3DC2E831-4713-11d2-BA41-00A0C90D2B05},,,%PropPage_CustomVideoProcAmp%
+HKCR,CLSID\{3DC2E831-4713-11d2-BA41-00A0C90D2B05}\InprocServer32,,,%CAMERA.DextFullName%
+HKCR,CLSID\{3DC2E831-4713-11d2-BA41-00A0C90D2B05}\InprocServer32,ThreadingModel,,Both
+
+[Ca504A.DextGUID.AddReg]
+HKLM,Software\%Ca504A.ProductName%\GUID,"CUSTOM_PROP_Data1",0x10001,0x23,0xab,0xb6,0x14
+HKLM,Software\%Ca504A.ProductName%\GUID,"CUSTOM_PROP_Data2",0x10001,0x20,0x54,0x00,0x00
+HKLM,Software\%Ca504A.ProductName%\GUID,"CUSTOM_PROP_Data3",0x10001,0xd5,0x11,0x00,0x00
+HKLM,Software\%Ca504A.ProductName%\GUID,"CUSTOM_PROP_Data4a",0x10001,0x60,0x00,0xbf,0xbe
+HKLM,Software\%Ca504A.ProductName%\GUID,"CUSTOM_PROP_Data4b",0x10001,0xbe,0xa9,0x33,0x67
+
+[Ca504A.PlugIns]
+;Custom Property Page
+HKCR,CLSID\%CAMERA.GUID_AX1%,,,%PlugIn_CustomCameraProp%
+HKCR,CLSID\%CAMERA.GUID_AX1%\InprocServer32,,,%CAMERA.DextFullName%
+HKCR,CLSID\%CAMERA.GUID_AX1%\InprocServer32,ThreadingModel,,Both
+HKLM,System\CurrentControlSet\Control\MediaInterfaces\%CAMERA.GUID_AX1%,,,%PlugIn_CustomCameraProp%
+HKLM,System\CurrentControlSet\Control\MediaInterfaces\%CAMERA.GUID_AX1%,IID,1,0x23,0xAB,0xB6,0x14, 0x20,0x54, 0xd5,0x11, 0xBE, 0xBF, 0x0, 0x60, 0x67, 0x33, 0xA9, 0xBE
+
+[Ca504A.Filters.Files]
+Dext504.ax
+
+
+; =================== Global ==================================
+
+[CAMERA.CopyDrivers]
+Ca504av.sys
+
+[CAMERA.CopySystem]
+;USBCAMD.SYS
+STREAM.SYS,,,16
+
+[CAMERA.CopyDLL]
+Dext504.ax
+SP5X_32.DLL
+IYUV_32.DLL,,,16
+MSH263.DRV,,,16
+
+[CAMERA.CopyTwain]
+enigma.DS
+enigma.dll
+USB_CAM.INI
+USB_CAM.DLL
+AVI.bmp
+
+[CAMERA.CopyWebHelp]
+_blank.htm
+_Topics0.gif
+_Topics.gif
+A_all.gif
+About.htm
+AccInt.htm
+Acquire.gif
+AVI.gif
+AVICr.gif
+AVIplay.gif
+AVIsave.gif
+bsscdht1.js
+bsscdht2.js
+bsscdhtm.js
+bsscnav1.gif
+bsscnav2.gif
+bsscnav3.gif
+bsscnav4.gif
+bsscnav5.gif
+bsscnav6.gif
+bsscnav7.gif
+bssctoc4.gif
+C_AVI.gif
+cam_ns.css
+DC_Int.htm
+Dnimage.htm
+Download.gif
+eHelp.xml
+Exit.gif
+ftsbody.htm
+ftsdhtml.htm
+ftsform.htm
+help.gif
+idxbody.htm
+idxdhtml.htm
+idxform.htm
+idxlist.htm
+kc100.gif
+mn100v1.gif
+navframe.htm
+navpane1.htm
+bsscnav8.gif
+bssctab0.gif
+bssctab1.gif
+bssctab2.gif
+bssctab3.gif
+bssctab4.gif
+bssctab5.gif
+bssctab6.gif
+bssctoc1.gif
+bssctoc2.gif
+bssctoc3.gif
+enigma.htm
+avi.jpg
+navpane2.htm
+tabframe.htm
+tocdhtml.htm
+toclist.htm
+useAVI.htm
+webhelp3.js
+Welcome.htm
+Zoom.gif
+enigma.jpg
+
+
+[CAMERA.CopyIni]
+enigma.INI
+TW504A.INI
+TW504A.SRC
+
+[CAMERA.UpdateInis]
+system.ini,drivers32,,"VIDC.IYUV=IYUV_32.DLL"
+system.ini,drivers32,,"VIDC.I420=MSH263.DRV"
+system.ini,drivers32,,"VIDC.SP54=SP5X_32.DLL"
+system.ini,drivers32,,"VIDC.SP55=SP5X_32.DLL"
+system.ini,drivers32,,"VIDC.SP56=SP5X_32.DLL"
+system.ini,drivers32,,"VIDC.SP57=SP5X_32.DLL"
+system.ini,drivers32,,"VIDC.SP58=SP5X_32.DLL"
+
+;---------------------------------------------------------------
+
+[Strings]
+ProviderName=    "Enigma"
+Sunplus.MfgName= "Enigma"
+;ProviderName=    "Sunplus"
+;Sunplus.MfgName= "Sunplus"
+SP5X.DeviceDesc= "SP5X Video Compressor and Decompressor"
+DriverName=      "Ca504av"
+DriverFullName=  "Ca504av.sys"
+UIF=             "Software\Microsoft\Windows\CurrentVersion\Uninstall"
+DiskName=        ""
+UninstallDisplayName= "Icatch(II) Camera Driver"
+
+;Dshext
+PropPage_CustomCameraProp=   "Custom Camera Property Page"
+PlugIn_CustomCameraProp=     " WDM Custom ICustomCamera Interface handler"
+PropPage_CustomVideoProcAmp= "Custom VideoProcAmp Property Page"
+
+;Non-Localizable
+SERVICE_KERNEL_DRIVER=1
+SERVICE_AUTO_START=2
+SERVICE_DEMAND_START=3
+SERVICE_ERROR_NORMAL=1
+ProxyVCap.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_VIDEO="{6994AD05-93EF-11D0-A3CC-00A0C9223196}"
+
+CAMERA.DextFullName= "Dext504.ax"
+CAMERA.GUID_AX1= "{14B6AB23-5420-11d5-BEBF-00606733A9BE}"
+CAMERA.GUID_AX2= "{14B6AB24-5420-11d5-BEBF-00606733A9BE}"
+
+;---------------------------------------------------------------
+; This Case for CA504A
+CAMERA.DeviceDesc=  "Enigma Video Capture"
+Ca504A.Capture=     "Enigma Video Capture"
+Ca504A.ProductName= "Sunplus CA504A"
+;Ca504A.UninstallIniFullName= "Ca504A.ini"
+Ca504A.UninstallIniFullName= "enigma.ini"
+
+
+TwainName=            "Enigma"
+;TwainSourceName=      "TWAIN_32 Icatch(II) Source"
+TwainSourceName=      "Enigma"

@@ -1,0 +1,26 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\FtpList]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\FtpList\001]
+"DisplayName"="NBCi"
+"HostName"="ftp.xoom.com"
+"URLName"="members.nbci.com"
+"UserID"=""
+"SignUpURL"="www.nbci.com"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\FtpList\002]
+"DisplayName"="GeoCities"
+"HostName"="ftp.geocities.com"
+"URLName"= "www.geocities.com"
+"UserID"=""
+"SignUpURL"="geocities.yahoo.com/home"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\FtpList\003]
+"DisplayName"="AOL Hometown"
+"HostName"="ftp.hometown.aol.com"
+"URLName"="www.hometown.aol.com"
+"UserID"=""
+"SignUpURL"="hometown.aol.com"
+
+

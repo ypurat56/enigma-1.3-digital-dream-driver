@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+<TITLE>Visor SVG de Adobe®</TITLE>
+<STYLE TYPE="TEXT/CSS"> BODY {background-color: white; margin: 20pt; font-size: 12px; line-height: 18px; font-family: Arial, Sans-Serif} H1, H2 {color: black} H3 {color: red} .H3I {margin-left: 1em} P {text-align: justify}
+</STYLE>
+</HEAD>
+<BODY link="#cc0000" alink="#cc0000" vlink="#996666">
+
+
+<CENTER>
+<H1>Visor SVG de Adobe<SUP>®</SUP> para Windows</H1>
+<H2>Notas de la versión</H2>
+<H3>Versión 2.0 (Build 55, 3/14/01)</H3>
+</CENTER>
+
+
+<H2>Contenido</H2>
+<UL>
+<LI><A HREF="#about">Acerca del Visor SVG</A>
+<LI><A HREF="#sysreq">Requisitos del sistema</A>
+<LI><A HREF="#installing">Cómo instalar el Visor SVG</A>
+<LI><A HREF="#copyplugin">Cómo copiar plug-ins de Netscape en otros exploradores</A>
+<LI><A HREF="#viewing">Cómo ver archivos SVG en el explorador de Web</A>
+<LI><A HREF="#converting">Cómo convertir ilustraciones en SVG</A>
+<LI><A HREF="#tips">Consejos y sugerencias</A>
+<LI><A HREF="#problems">Problemas conocidos</A>
+<LI><A HREF="#history">Historial de revisiones</A>
+<LI><A HREF="#contact">Información de contacto</A>
+<LI><A HREF="#copyright">Aviso de copyright</A>
+<LI><A HREF="http://www.adobe.com/svg/">Más información acerca del soporte de Adobe para SVG</A>
+</UL>
+
+<P><HR>
+
+<H2><A NAME="about"></A>Acerca del Visor SVG</H2>
+
+<P>El Visor SVG de Adobe se basa en gran parte en la especificación preliminar de SVG de la  <a href="http://www.w3.org/TR/2000/CR-SVG-20001102/index.html">Recomendación posible</a> publicada el 2/11/00. Tenga en cuenta que la especificación está en proceso desarrollo y se realizarán modificaciones antes de definirse como especificación recomendada.
+
+
+<H2><A NAME="installing"></A>Cómo instalar el Visor SVG</H2>
+<P><OL>
+<LI>Antes de instalar, cierre cualquier aplicación que haya usado para ver SVG con una versión antigua del visor.
+<LI>Ejecute el instalador. Los últimos instaladores publicados se pueden descargar en <a href="http://www.adobe.com/svg/viewer/install">http://www.adobe.com/svg/viewer/install</a>.
+</OL>
+
+<H2><A NAME="copyplugin"></A> Cómo copiar plug-ins de Netscape en otros exploradores</H2>
+<P>Si instala otra copia de Netscape que es compatible con el plug-in de Netscape, puede copiar los siguientes archivos en la carpeta de plug-ins para ver SVG con ese explorador:
+<UL>
+<LI>NPSVGVw.dll
+<LI>SVGView.dll
+<LI>SVGViewer.zip
+</UL>
+
+
+<H2><A NAME="viewing"></A> Cómo ver archivos SVG en el explorador Web</H2>
+
+<P>Una vez instalado el Visor SVG de Adobe, deberá poder ver cualquier archivo SVG que exporte desde Illustrator en cualquier explorador de Web compatible.</P>
+
+<H2><A NAME="converting"></A>Cómo convertir ilustraciones en SVG</H2>
+
+<P>Puede exportar SVG desde Illustrator 9 y crear una ilustración en Illustrator, exportarla como SVG y, a continuación, agregar manualmente interactividad Java, animaciones o efectos de filtro.</P>
+
+<H2><A NAME="tips">Consejos y sugerencias</H2>
+
+<UL>
+<LI>Los atributos de estilo (o los atributos de estilo que utilizan referencias a entidades) se procesan de manera más rápida que las hojas de estilo incrustadas.
+<LI>Utilice porcentajes estrechamente relacionados en los atributos <code>x</code>, <code>y</code>, <code>width</code> y <code>height</code> de los elementos de <code>filter</code> con el fin de minimizar el área sobre la que es necesario calcular el efecto del filtro. Esto dará como resultado que los gráficos se muestren de forma mucho más rápida.
+<li>Puede recuperar el objeto del documento SVG con los controladores de sucesos SVG si invoca <code>getTarget</code> en el objeto <code>evt</code> en el que se pasa. Por ejemplo: <pre>
+  // Retrieve the SVG document object:
+  var directTarget = evt.getTarget();
+  var svgDocument;
+  if( directTarget.getNodeType() != 9 )  // if not DOCUMENT_NODE
+    svgDocument = directTarget.getOwnerDocument();
+  else
+    svgDocument = directTarget;
+</pre>
+</UL>
+
+<P><HR>
+
+
+
+<H2><A NAME="sysreq"></A>Requisitos del sistema</H2>
+<UL>
+<LI>Windows 95, 98, 2000 o NT 4.0
+<LI>Netscape Navigator o Communicator, versiones 4.0 a 4.75, o Internet Explorer 4.0 o superior. <emph> No</emph> se admite Netscape 6.
+<LI>13 MB de espacio en el disco duro
+<LI>32 MB de RAM (recomendado)
+</UL>
+
+<P><HR>
+<H2><A NAME="problems"></A>Problemas conocidos con el Visor SVG</H2>
+
+<H3><A NAME="problems_all"></A>Todos los exploradores</H3>
+<OL>
+
+<li>Es posible que los elementos situados cerca del borde de un gráfico SVG no reciban un evento mouseout. 
+
+</OL>
+
+<H3><A NAME="problems_ie"></A>Internet Explorer</H3>
+<OL>
+<li>Debe tener Internet Explorer 4 o superior instalado para poder utilizar el Visor SVG como un control ActiveX en otras aplicaciones (como Microsoft Office).
+<li>Si abre más de una ventana que contenga un vínculo al mismo archivo SVG, y el archivo SVG está incrustado mediante el código HTML &lt;embed&gt;, la impresión de una de las ventanas podría realizarse según los cambios en el DOM de la otra ventana. Esto se debe a las limitaciones de Internet Explorer.
+<li>Debido a las limitaciones de Internet Explorer, no es posible ver las propiedades de otras ventanas desde un archivo de comandos definido dentro de un archivo SVG.
+<li><b>No</b> se admite el uso del plug-in de Netscape SVG de Adobe bajo Internet Explorer en Windows.
+</OL>
+
+<H3><A NAME="problems_nn"></A>Netscape</H3>
+<OL>
+
+<li><!--ABTS#392459-->Los plug-ins de Netscape 4.x no pueden ejecutar archivos de comandos <code>onunload</code> porque en el momento en que el plug-in recibe notificación de Netscape de que el plug-in se está descargando, el entorno de archivo de comandos del plug-in ya se ha cerrado definitivamente.
+<li><!--ABTS#390346-->Netscape 6.0 da errores al imprimir páginas con plug-ins y no puede imprimir contenido incrustado. Netscape mostrará dos alertas de error de plugin. Si se cierran las alertas mostradas, Netscape imprimirá la página HTML, pero con un área en blanco para el contenido SVG.
+<li>Al salir de una página Web, Netscape puede descargar el plug-in Visor SVG de Adobe antes de terminar todos los archivos de comandos que se ejecutan en el HTML. Por lo tanto, debe tener cuidado al escribir archivos de comandos que comprueben si el plug-in aún está cargado antes de intentar acceder al DOM SVG con llamadas a <code>setTimeout</code> o <code>setInterval</code> en el JavaScript HTML.
+<li>Debido a las limitaciones de diseño de Netscape, evite el uso de HTML con el siguiente formato: <pre>
+  &lt;a href="#" onclick="myScriptWhichModifiesSVG()"&gt;
+</pre>
+<p>El problema es que JavaScript responde al evento onclick y comienza a ejecutar el archivo de comandos, pero entonces Netscape responde también a la acción de haber hecho clic en un vínculo e interrumpe el JavaScript para volver a cargar la página actual. Este conflicto se puede evitar volviendo a escribir el código de la forma siguiente: <pre>
+  &lt;a href="javascript:myScriptWhichModifiesSVG()"&gt;
+</pre>
+<li><!--ABTS#364416-->Si el controlador de eventos de JavaScript contiene un error, no se podrá ejecutar ningún JavaScript posterior. Esto se debe a un error en el manejo de archivos de comandos de Netscape ejecutados por los plug-ins.
+<li>Debido a las limitaciones de archivos de comandos de Netscape, no se puede cambiar el URL de otro cuadro desde un controlador de eventos SVG.
+<li>Debido a las limitaciones del motor de archivos de comandos de Netscape, invocar la función <code>alert()</code> desde un controlador de eventos SVG podría no funcionar y provocar que no se ejecuten los JavaScripts posteriores. Problemas similares se producen en cualquier ventana modal de Netscape, incluida la ventana de privilegios de seguridad. Este error parece haberse corregido parcialmente en Netscape 4.75, pero no en Windows 98.
+<li><!--ABTS#392481-->Hay un error en Netscape relacionado con plug-ins que utilizan JavaScript. Si carga una página con un plug-in que utiliza JavaScript y, a continuación, desactiva Java y sale del explorador, Netscape quedará bloqueado.
+<li><!--ABTS#389988-->Netscape no siempre le permite acceder a la matriz <code>document.embeds[]</code> desde un archivo de comandos SVG. Para solucionar esto, utilice <code>document.mySVG</code>, donde <code>mySVG</code> es el nombre del objeto incrustado.
+
+<li><!--ABTS#364417-->Los errores en archivos de comandos ejecutados por plug-ins de Netscape 4.x no se muestran en la ventana de la consola Javascript.
+<li><!--ABTS#364461-->Netscape 4.x pierde una pequeña cantidad de memoria cada vez que un plug-in ejecuta un archivo de comandos.
+<li><!--ABTS#364524-->Netscape 4.x se bloqueará al cerrarse si se inició haciendo doble clic para cargar una página Web con contenido de plug-in LiveConnect.
+<li>Netscape se bloqueará si ejecuta el comando "Vista preliminar" en una página que contenga plug-ins (como el Visor SVG de Adobe). Por una razón similar, Netscape también se bloquea al intentar imprimir una página que contenga plug-ins que utilicen Acrobat Distiller.
+<li>Si utiliza Netscape 4.0x para ver el mismo archivo SVG en dos ventanas, y dicho archivo utiliza una función JavaScript global en el objeto de ventana, JavaScript no se inicializará en ocasiones en la segunda ventana. La solución es actualizar a una versión más reciente de Netscape.
+<li>Debido a un error en Netscape 6, hacer clic con el botón derecho del ratón dentro del área SVG para abrir un menú contextual falla en Netscape 6. En su lugar, se abre el menú contextual de Netscape 6.
+</OL>
+
+<P><HR>
+
+
+<H2><A NAME="history"></A>Historial de revisiones</H2>
+
+<h3>Cambios desde la versión 1.0 del Visor SVG de Adobe</h3>
+<ul>
+
+<li>Elementos y atributos:
+<ul>
+<li>Compatibilidad agregada para los siguientes elementos: <code>altGlyph</code>, <code>altGlyphDef</code>, <code>font</code>, <code>font-face</code>, <code>glyph</code>, <code>glyphRef</code>, <code>hkern</code>, <code>missing-glyph</code>, <code>mpath</code>, <code>pattern</code> y <code>vkern</code>.
+<li>Compatibilidad agregada para los atributos de presentación de SVG
+<li>Compatibilidad terminada para el uso del elemento <code>use</code> de elementos <code>symbol</code>.
+<li>Compatibilidad agregada para el atributo <code>spreadMethod</code> en degradados.
+<li>Compatibilidad agregada para el nuevo atributo <code>primitiveUnits</code> en efectos de filtro.
+<li>Compatibilidad agregada para el modo "discreto" de <code>feComponentTransfer</code>.
+</ul>
+
+<li>Propiedades CSS:
+<ul>
+<li>Compatibilidad agregada para las siguientes propiedades CSS: <code>alignment-baseline</code>, <code>color-interpolation</code>, <code>direction</code>, <code>dominant-baseline</code>, <code>flood-color</code>, <code>flood-opacity</code>, <code>kerning</code>, <code>lighting-color</code>, <code>pointer-events</code> y <code>unicode-bidi</code>. La compatibilidad con la propiedad <code>pointer-events</code> no incluye la transparencia de elementos de trama.
+<li>Compatibilidad agregada para la propiedad <code>font-variant</code>, pero sólo cuando se aplica a las fuentes SVG.
+<li>Compatibilidad eliminada para la propiedad <code>baseline-identifier</code>, que se ha sustituido por la propiedad <code>alignment-baseline</code> en la última especificación aceptada.
+<li>Han cambiado los valores predeterminados de las propiedades <code>clip-rule</code> y <code>fill-rule</code> de <code>even-odd</code> a <code>non-zero</code> para reflejar los cambios en la última especificación aceptada.
+<li>La última especificación preliminar de la Recomendación posible para SVG cambia la forma en que se manejan las unidades CSS. Ahora se convierten al espacio del usuario al analizar, en lugar de en el momento de la visualización. Esto cambia notablemente la forma en que funciona el comando "Zoom".
+</ul>
+
+<li>DOM:
+<ul>
+<li>La compatibilidad con el Nivel 2 de DOM del Visor se ajusta ahora a la especificación de la revisión posible de DOM 2, a excepción de la interfaz <code>keyEvent</code>, que no se define en dicha especificación. La compatibilidad con la interfaz <code>keyEvent</code> se ajusta a la última versión publicada de DOM 2 de esa interfaz, en la especificación preliminar del 9/99.
+<li>Compatibilidad agregada para la interfaz <code>SVGRect</code>.
+<li>Compatibilidad agregada para la interfaz <code>SVGPoint</code>, a excepción del método <code>matrixTransform</code>.
+<li>Compatibilidad agregada para la interfaz <code>SVGTextContentElement</code>, a excepción de las propiedades <code>getTextLength</code> y <code>getLengthAdjust</code>.
+<li>Compatibilidad agregada para <code>rootElement</code>, <code>getRootElement</code>, <code>currentScale</code>, <code>getCurrentScale</code>, <code>setCurrentScale</code>, <code>currentTranslate</code>, <code>getCurrentTranslate</code> y <code>setCurrentTranslate</code> de la interfaz <code>SVGDocument</code>.
+<li>Compatibilidad agregada para los métodos DOM2 <code>hasAttribute</code> y <code>hasAttributeNS</code> de la interfaz <code>Element</code>.
+<li>Compatibilidad agregada para un nuevo método no estándar en el objeto <code>Document</code> llamado <code>garbageCollect</code>. Este método no lleva ningún parámetro y no devuelve ningún resultado. Invocar este método liberará cualquier objeto Node previamente eliminado del árbol. Si un archivo de comandos ha realizado una operación que da lugar a la eliminación de un nodo del árbol, una vez que el archivo de comandos ya no tiene uso para el nodo eliminado (y devuelto), el archivo de comandos debería invocar <code>garbageCollect</code> en el documento SVG. Una vez invocado, cualquier referencia de un archivo de comandos a un nodo que no era parte del documento cuando se invocó <code>garbageCollect</code> siempre fallará al acceder a su método. Esta es la única ventaja de los exploradores Netscape, ya que LiveConnect de Netscape no ofrece compatibilidad con referencias débiles. Para obtener una fácil compatibilidad multiplataforma, esta llamada se puede hacer bajo Internet Explorer, pero no servirá de nada en esa plataforma.
+</ul>
+
+<li>Otros cambios:
+<ul>
+<li>Para cumplir con la última especificación preliminar de la Recomendación posible para SVG, se ha eliminado la compatibilidad para las unidades <code>userSpace</code>.
+<li>Compatibilidad agregada para hojas de estilo de usuario. El Visor SVG busca un archivo llamado <code>SVG-User-Styles.css</code>, de acuerdo con la siguiente estrategia de búsqueda:
+
+<p><table align="center" width="70%">
+<tr><td align="center" bgcolor="#EEEEEE">Sistema operativo</td><td align="center" bgcolor="#EEEEEE" colspan="2">Rutas buscadas</td></tr>
+<tr><td valign="top">Windows 2000</td><td><ol>
+<li>Mis documentos
+<li>\Documentos y configuración\&lt;usuario&gt;\Datos de programa
+<li>\Documentos y configuración\&lt;usuario&gt;\Configuración local\Datos de programa
+<li>\Documentos y configuración\Todos los usuarios\Datos de programa
+</ol></td></tr>
+<tr><td valign="top">Windows 98</td><td><ol>
+<li>Mis documentos
+</ol></td></tr>
+<tr><td valign="top">Windows NT</td><td><ol>
+<li>\WINNT\Perfiles\&lt;usuario&gt;\Personal
+<li>\WINNT\Perfiles\&lt;usuario&gt;\Datos de programa
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 8.x</td><td><ol>
+<li>Carpeta del Sistema:Preferencias
+<li>Volumen de inicio:Documentos
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(único usuario)</td><td><ol>
+<li>Carpeta del Sistema:Preferencias
+<li>Carpeta del Sistema:Usuarios:&lt;usuario&gt;
+<li>Volumen de inicio:Documentos
+</ol></td></tr>
+<tr><td valign="top">Macintosh OS 9.x<br>(multiusuario)</td><td><ol>
+<li>Volumen de inicio:Usuarios:&lt;usuario&gt;:Preferencias
+<li>Volumen de inicio:Documentos
+</ol></td></tr>
+</table>
+
+<li>El Visor SVG de Adobe lleva ahora incorporada su propia compatibilidad de administración del color. Esta compatibilidad intentará localizar un perfil de dispositivo adecuado para su pantalla.  Si su ordenador tiene instalado software de administración del color y se ha seleccionado un perfil de monitor, el Visor utilizará también este perfil de monitor. Si no tiene instalada administración del color, o la ha desactivado, el Visor buscará un perfil de configuración de monitor de Adobe en el sistema.  Este perfil lo crea la herramienta Adobe Gamma (instalada con otros productos Adobe) y se almacena generalmente en los mismos directorios que otros perfiles de color del sistema host.  Si no se encuentra ningún perfil de dispositivo adecuado, el Visor recurrirá al perfil sRGB estándar y lo utilizará para todas las interpretaciones.
+<li>El plug-in de Netscape admite ahora acceso a DOM desde clientes Java.
+<li>El control ActiveX admite ahora controladores de eventos que no son de JavaScript (p. ej. Visual Basic).
+<li>Modificaciones para la compatibilidad con Windows 2000.
+<li>Un método alternativo agregado para panoramizar gráficos SVG con el teclado como medio de acceso.  Si el bloqueo de desplazamiento está activado, las teclas de flecha panoramizarán los gráficos SVG que tienen el enfoque.
+<li>Las mejoras en el rendimiento implican múltiples animaciones simultáneas dentro del mismo archivo SVG. Los archivos SVG con animaciones simultáneas pequeñas, ampliamente espaciadas, se deben mostrar por lo general más rápido en la versión actual que en la Versión 1.0.
+<li>Mejoras en el rendimiento del plug-in de Mac.
+<li>Compatibilidad mejorada para texto vertical.
+<li>Compatibilidad agregada para texto bidireccional.
+<li>Optimizaciones en el rendimiento general.
+<li><code>feImage</code> modificado para funcionar como el elemento <code>use</code>.
+<li>Compatibilidad actualizada para imágenes PNG.
+<li>Optimizaciones en el uso de memoria.
+<li>Compatibilidad agregada para rutas de animaciones.
+</ul>
+
+</ul>
+
+<P><HR>
+
+
+
+
+<H2><A NAME="contact"></A>Información de contacto</H2>
+
+<P>Para notificar errores y proporcionar comentarios, vaya a la  <A HREF="http://www.adobe.com/svg/">Zona SVG</A> de Adobe.com.
+
+<H2><A NAME="copyright"></A>Aviso de copyright</H2>
+
+<P>© Copyright 1998-2001 por Adobe Systems Incorporated. Reservados todos los derechos.
+
+<P>Adobe e Illustrator son marcas comerciales de Adobe Systems Incorporated. Windows y Windows NT son marcas comerciales registradas de Microsoft Corporation en los Estados Unidos y/u otros países. Mac OS y TrueType son marcas comerciales de Apple Computer, Inc. en los Estados Unidos y/u otros países. Todas las demás marcas comerciales pertenecen a sus respectivos propietarios.
+
+</BODY>
+</HTML>
+

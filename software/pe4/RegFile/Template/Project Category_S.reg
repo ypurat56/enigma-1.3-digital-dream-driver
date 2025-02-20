@@ -1,0 +1,81 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\3D Folding Projects]
+"Display Name"="Proyectos Doblados 3D"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\3D Folding Projects\Others]
+"Display Name"="Otros"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Album Scrapbook]
+"Display Name"="Álbum & Borrador"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Album Scrapbook\Album Covers]
+"Display Name"="Tapas de Álbum"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank]
+"Display Name"="En blanco"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank\3D Folding Projects]
+"Display Name"="Proyectos Doblados 3D"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank\Labels]
+"Display Name"="Etiquetas"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business]
+"Display Name"="Negocio"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business\Business Cards]
+"Display Name"="Tarjetas Comerciales"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business\Certificates]
+"Display Name"="Certificados"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards]
+"Display Name"="Tarjetas"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards]
+"Display Name"="Tarjetas de Saludos"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards\Congratulation]
+"Display Name"="Enhorabuena"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards\Season's Greeting]
+"Display Name"="Felices Fiestas"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards]
+"Display Name"="Tarjetas de Festividad"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards\Easter]
+"Display Name"="Pascuas"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards\Thanksgiving]
+"Display Name"="Acción de Gracias"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff]
+"Display Name"="Cosa Divertida"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff\Certificates(Kid)]
+"Display Name"="Certificados (Niños)"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff\Guest Name Cards]
+"Display Name"="Tarjetas de Invitados"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion]
+"Display Name"="Promociones"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion\Poster]
+"Display Name"="Pósteres"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion\Poster\General]
+"Display Name"="General"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery]
+"Display Name"="Útiles"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery\Labels]
+"Display Name"="Etiquetas"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery\Labels\CD Labels]
+"Display Name"="Etiquetas de CD"

@@ -1,0 +1,81 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\3D Folding Projects]
+"Display Name"="3D 폴딩 프로젝트"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\3D Folding Projects\Others]
+"Display Name"="그 외"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Album Scrapbook]
+"Display Name"="앨범 & 스크랩북"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Album Scrapbook\Album Covers]
+"Display Name"="앨범 커버"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank]
+"Display Name"="백지"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank\3D Folding Projects]
+"Display Name"="3D 폴딩 프로젝트"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Blank\Labels]
+"Display Name"="상표"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business]
+"Display Name"="비즈니스"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business\Business Cards]
+"Display Name"="비즈니스 카드"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Business\Certificates]
+"Display Name"="증명서"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards]
+"Display Name"="카드"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards]
+"Display Name"="인사 카드"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards\Congratulation]
+"Display Name"="축하"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Greeting Cards\Season's Greeting]
+"Display Name"="계절 인사장"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards]
+"Display Name"="명절 카드"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards\Easter]
+"Display Name"="부활절"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Cards\Holiday Cards\Thanksgiving]
+"Display Name"="추수감사절"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff]
+"Display Name"="재미있는 것"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff\Certificates(Kid)]
+"Display Name"="증명서 (어린이)"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Fun Stuff\Guest Name Cards]
+"Display Name"="게스트 네임 카드"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion]
+"Display Name"="프로모션"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion\Poster]
+"Display Name"="포스터"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Promotion\Poster\General]
+"Display Name"="일반"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery]
+"Display Name"="편지지"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery\Labels]
+"Display Name"="상표"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Project Category\Stationery\Labels\CD Labels]
+"Display Name"="CD 상표"

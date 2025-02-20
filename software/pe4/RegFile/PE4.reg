@@ -1,0 +1,188 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\DataFile]
+"PE4ofFrames"="Frames.pe4"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\DataFile\Background]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Default Path]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Html Thumbnail]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Import Module]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Import Module\Camera]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Import Module\Digital Camera]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Import Module\Scanner]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Import ModuleCamera]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Insert From File]
+"Sort"=dword:00000004
+"Media"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Insert From File\Recent Folders]
+"Ver30"=dword:00000000
+"Total"=dword:00000001
+"Folder0"="c:\\"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Installer]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Label]
+"Main CDROM"="PROGRAM_CD"
+"Content CDROM"="CONTENT_CD"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Online]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PDHOME]
+"WebPage"="http://www.ulead.com/pe/"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PhotoNet]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PhotoNet\Billing]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PhotoNet\File Count]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PhotoNet\SaveFilm]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PhotoNet\Server]
+"ServerName"="kodaktest.photonet.com"
+"PortNumber"=dword:00000bc3
+"PrintServerName"="kodaktest.photonet.com"
+"PrintPortNumber"=dword:00000bc3
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PhotoNet\ViewFilm]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Place From File]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Place From File\Recent Folders]
+"Ver30"=dword:00000000
+"Total"=dword:00000001
+"Folder0"="c:\\"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Preference]
+"bGuideTips"=dword:00000000
+"AutoHide"=dword:00000001
+"bSoundOn"=dword:00000001
+"UndoLevel"=dword:00000063
+"SaveAsFile"="BMP"
+"RotateDegree"=dword:00000001
+"nGamma"=dword:000000dc
+"bToolTipOn"=dword:00000001
+"bLimitMemory"=dword:00000000
+"AcquireFile"="JPG"
+"bMonitorGamma"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\PrintTile]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\TSURL]
+"WebPage"="http://support.ulead.com/"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\TWAIN]
+"First Time"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\TWAIN\Camera]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\TWAIN\Digital Camera]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\TWAIN\Scanner]
+"Data Source"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\ULHOME]
+"WebPage"="www.ulead.com"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Help]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Video Capture]
+"Prefix Name"="Pict"
+"Device Name"=""
+"File Format"=dword:00000000
+"Version Number"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\Web Address]
+@="http://www.ulead.com"
+"Default Web Card"="WebCard.htm"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A0-F1F7-11d2-B554-0000E83DCE23}]
+@="PE4.BasicEditing"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A0-F1F7-11d2-B554-0000E83DCE23}\ProgID]
+@="PE4.BasicEditing"
+
+[HKEY_CLASSES_ROOT\PE4.BasicEditing]
+@="PE4.BasicEditing"
+
+[HKEY_CLASSES_ROOT\PE4.BasicEditing\CLSID]
+@="{FD3577A0-F1F7-11d2-B554-0000E83DCE23}"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A1-F1F7-11d2-B554-0000E83DCE23}]
+@="PE4.BnC"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A1-F1F7-11d2-B554-0000E83DCE23}\ProgID]
+@="PE4.BnC"
+
+[HKEY_CLASSES_ROOT\PE4.BnC]
+@="PE4.BnC"
+
+[HKEY_CLASSES_ROOT\PE4.BnC\CLSID]
+@="{FD3577A1-F1F7-11d2-B554-0000E83DCE23}"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A2-F1F7-11d2-B554-0000E83DCE23}]
+@="PE4.ClrBaln"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A2-F1F7-11d2-B554-0000E83DCE23}\ProgID]
+@="PE4.ClrBaln"
+
+[HKEY_CLASSES_ROOT\PE4.ClrBaln]
+@="PE4.ClrBaln"
+
+[HKEY_CLASSES_ROOT\PE4.ClrBaln\CLSID]
+@="{FD3577A2-F1F7-11d2-B554-0000E83DCE23}"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A3-F1F7-11d2-B554-0000E83DCE23}]
+@="PE4.Crop"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A3-F1F7-11d2-B554-0000E83DCE23}\ProgID]
+@="PE4.Crop"
+
+[HKEY_CLASSES_ROOT\PE4.Crop]
+@="PE4.Crop"
+
+[HKEY_CLASSES_ROOT\PE4.Crop\CLSID]
+@="{FD3577A3-F1F7-11d2-B554-0000E83DCE23}"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A4-F1F7-11d2-B554-0000E83DCE23}]
+@="PE4.Rotate"
+
+[HKEY_CLASSES_ROOT\CLSID\{FD3577A4-F1F7-11d2-B554-0000E83DCE23}\ProgID]
+@="PE4.Rotate"
+
+[HKEY_CLASSES_ROOT\PE4.Rotate]
+@="PE4.Rotate"
+
+[HKEY_CLASSES_ROOT\PE4.Rotate\CLSID]
+@="{FD3577A4-F1F7-11d2-B554-0000E83DCE23}"
+
+// >>> Enable this block for our internal usage -----------------------------------------
+//== [HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\UTX Options]
+//== "bShowOptionDlg"=dword:00000000
+//== "Current Locale"=dword:00000404
+//== "Locale COunt"=dword:0000000d
+//== "Locale0"=dword:00000404
+//== "Locale1"=dword:00000804
+//== "Locale2"=dword:00000409
+//== "Locale3"=dword:0000040a
+//== "Locale4"=dword:0000040c
+//== "Locale5"=dword:00000410
+//== "Locale6"=dword:00000411
+//== "Locale7"=dword:00000412
+//== "Locale8"=dword:00000407
+//== "Locale9"=dword:00000413
+//== "locale10"=dword:00000416
+//== "locale11"=dword:00000816
+//== "locale12"=dword:00000813
+//== "User"="JKL-23"
+//== @="\"\""
+// <<< Enable this block for our internal usage =========================================

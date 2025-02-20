@@ -1,0 +1,85 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{A9D67815-0932-4aaf-9362-67EB46C94520}]
+"DebugDLL"="PEObjD.dll"
+"ReleaseDLL"="PEObj.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{96BEA962-DD0C-11d3-AE20-0000E834C74F}]
+"DebugDLL"="BwsHand.dll"
+"ReleaseDLL"="BwsHand.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{BBB84135-035E-4086-9838-413639BC8EFF}]
+"DebugDLL"="BarD.dll"
+"ReleaseDLL"="Bar.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{17DBE837-4344-450d-B92B-8541937FBA2B}]
+"DebugDLL"="PrnHandD.dll"
+"ReleaseDLL"="PrnHand.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{509B26E2-C9DC-42d9-97BE-80E5F2419BED}]
+"DebugDLL"="PrnHandD.dll"
+"ReleaseDLL"="PrnHand.dll"
+
+//	CLSID_CAlbumDocOpenOption
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{3fee96e6-b5ad-4380-912a-d4a27583460a}]
+"DebugDLL"="AbmHandD.dll"
+"ReleaseDLL"="AbmHand.dll"
+
+//	CLSID_CAlbumDocHandler
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{7EEBDA99-7CBB-4089-8521-4C09FB7DC162}]
+"DebugDLL"="AbmHandD.dll"
+"ReleaseDLL"="AbmHand.dll"
+
+//	CLSID_ALBUMDOC
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{E68737F4-4DF2-47fc-86E9-A20C85120ED9}]
+"DebugDLL"="AbmHandD.dll"
+"ReleaseDLL"="AbmHand.dll"
+
+//	CLSID_ALBUMSHELF
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{C65242F2-4C93-42b6-8F17-D4C0E3661E68}]
+"DebugDLL"="AbmHandD.dll"
+"ReleaseDLL"="AbmHand.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{0F002EBD-92D1-4c8e-B392-F02B1201D46A}]
+"DebugDLL"="AbmShDVD.dll"
+"ReleaseDLL"="AbmShDV.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{AECE8F32-9D1D-440e-9754-510C63389147}]
+"DebugDLL"="AbmShDVD.dll"
+"ReleaseDLL"="AbmShDV.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{AF33750D-EB95-40b0-BB8E-0EAC58E574A8}]
+"DebugDLL"="mailtold.dll"
+"ReleaseDLL"="mailtool.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{4FAACAC3-55A7-483b-A1A2-8EC24B7F409C}]
+"DebugDLL"="mailtold.dll"
+"ReleaseDLL"="mailtool.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{B29FBB7B-CEC1-4083-8F9C-F78D58A9DECB}]
+"DebugDLL"="mailtold.dll"
+"ReleaseDLL"="mailtool.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{7F42409D-A6A9-4a8f-BC2E-24F6A055AD03}]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{98C41BDD-6285-4ed4-9E6D-3EC4338B7888}]
+"DebugDLL"="PECenter.dll"
+"ReleaseDLL"="PECenter.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{6BD23C55-F300-4394-A1C4-A56A64AA9D10}]
+"DebugDLL"="mailtold.dll"
+"ReleaseDLL"="mailtool.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{FA8E9730-D0F5-4fdb-877C-28778437E619}]
+"DebugDLL"="mailtold.dll"
+"ReleaseDLL"="mailtool.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{AE9E0740-5DC0-4145-B570-8AF57048C17F}]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{FDC7DBD3-1628-4223-A008-654526A03702}]
+"DebugDLL"="mailtold.dll"
+"ReleaseDLL"="mailtool.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\CLSID\{1536A204-189C-49c7-B98B-187113DFB19D}]
+
+

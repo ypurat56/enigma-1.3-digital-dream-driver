@@ -1,0 +1,22 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate\Events]
+"Folder"="Events"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate\LandMark]
+"Folder"="LandMark"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate\Nature]
+"Folder"="Nature"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate\Sports]
+"Folder"="Sports"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate\Stationery]
+"Folder"="Stationery"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Ulead Systems\Ulead Photo Express SE\4.0\WebStudio\WebDecorate\Xmas]
+"Folder"="Xmas"
+

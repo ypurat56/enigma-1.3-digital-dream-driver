@@ -1,0 +1,35 @@
+Ulead Systems Inc.
+Acuerdo de Licencia de Usuario
+AVISO AL USUARIO: ESTE ES UN CONTRATO. CON INSTALAR ESTE SOFTWARE, UD. ACEPTA LOS TÉRMINOS Y CONDICIONES DE ESTE ACUERDO DE LICENCIA. 
+
+1. Derechos de Propiedad Intelectual: Este programa de software (el "Software") y los materiales escritos acompañados están bajo el derecho de copia y son productos propietarios de Ulead Systems, Inc.  El Software también está protegido por la Ley de Derecho de Copia de Los Estados Unidos de América y las provisiones del Tratado internacional. Se deben usar las marcas comerciales según la práctica de marca comercial aceptada, incluyendo la identificación del nombre del propietario de la marca comercial. Sólo se usan las marcas comerciales para identificar los contenidos impresos producidos por el Software.  Tal uso de cualquier marca comercial no le da los derechos de propiedad en esa marca comercial.  Excepto como citado más arriba, este Acuerdo no le otorga derechos de propiedad intelectual alguna en el Software.
+2. Uso del Software: Puede:(1) usar el Software en cualquier ordenador singular, proveyendo el Software está en uso sólo en un ordenador por vez.  El software está "en uso" en un ordenador cuando está cargado en la memoria temporaria (es decir, RAM) o instalado en la memoria permanente (es decir, disco rígido) de ese ordenador. (2) hacer una sola copia del Software solamente para propósitos de respaldo o de archivo. (3) permanentemente transferir todos sus derechos para usar el Software a otra persona o entidad legal que transfiere este Acuerdo, el Software, y todos los materiales escritos acompañados, proveyendo que no retenga copias del Software o materiales escritos y que la otra parte acepte los términos de este Acuerdo de Licencia.  No Puede: (1) hacer, o haber hecho, cualquier forma de copia, sea legal, impreso, fotográfico u otros, del Software, excepto que tal Software pueda ser incorporado por Ud. en el material en la pantalla e impreso. (2) poner, o haber puesto el Software en un boletín electrónico u otra forma de servicio on-line. (3) usar, o haber usado, el Software en cualquier forma de pornografía, o en cualquier material difamatorio de cualquier persona o entidad comercial en cualquiera de las imágenes, o que implica alguna forma de endorso por el Software, sus proveedores, sus concedentes, o algún individuo o entidad descriptos en el Software . (4) invertir la ingeniería, descompilar o desmontar u otro intento para describir el código de fuente del Software. (5) modificar, adaptar, traducir, alquilar, arrendar, prestar o crear trabajos derivativos del Software. (6) exportar el Software en cualquier forma sin las licencias de los E.E.U.U y del gobierno extranjero apropiadas. (7) instalar el Software en una copia ilegal de Windows que no está debidamente licenciada.
+
+3. Término: Este Licencia continuará a lo largo de su uso del Software, excepto que terminará si deja de obedecer algún término o condición de este Acuerdo. Por tal terminación, o para que Ud. pueda terminar el Acuerdo, Ud. acepta destruir las copias originales y cualquier copias del Software.
+
+4. Garantía Limitada: 
+A. Ulead garantiza que el medio original en donde está registrado el Software estará libre de defectos en materiales y confección, asumiendo el uso normal, por un periodo de noventa (90) días desde su fecha de recibo.  Si ocurre un defecto, devuélvaselo a Ulead, junto con una prueba de compra fechada, y se lo reemplazará gratuitamente.
+B. La responsabilidad y el remedio completo y exclusivo de Ulead será limitado, bajo la opción de Ulead, reparo o reemplazo del Software que no obedece a la garantía limitada de Ulead o reembolso de arancel de la licencia pagado por el Software con una prueba de compra.
+C. ULEAD Y SUS PROVEEDORES NO HACEN NI PUEDEN GARANTIZAR EL RENDMIENTO O RESULTADOS QUE OBTENDRÍA CON USAR EL SOFTWARE O LOS ÍTEMS ACOMPAÑADOS.  LAS CITACIONES CONTENIDAS SON REMEDIOS ÚNICOS Y EXCLUSIVOS PARA LA ROTURA DE GARANTÍA DE ULEAD Y SUS PROVEEDORES.  EXCEPTO POR LA GARANTÍA EXPRESADA MÁS ARRIBA, ULEAD NO GARANTIZA OTRAS GARANTÍAS, EXPRESA O IMPLICADA, COMO LA NO VIOLACIÓN DE DERECHOS DE TERCERA PARTE, LA COMERCIALIZACIÓN, O ADAPTACIÓN PARA CUALQUIER PROPÓSITO EN PARTICULAR.  NINGUNA INFORMACIÓN O AVISO ORAL O ESCRITO PROVISTO POR ULEAD A SUS MAYORISTAS, AGENTES, O EMPLEADOS CREA UNA GARANTÍA.  Algunos estados no permite las exclusiones o limitación de garantías implicadas, por eso las exclusiones y/o limitación citadas más arriba podrían no ser aplicables para Ud.
+
+5. Limitación de Responsabilidad:
+EN NINGÚN MOMENTO ULEAD SERÁ RESPONSIBLE POR CUALQUIER DAÑOS, INCLUYENDO ALGUNA PÉRDIDA DE LUCROS, U OTROS DAÑOS INCIDENTALES O CONSECUENCIALES, ORGINANDO DE SU USO O INABILIDAD DE USAR EL SOFTWARE O MATERIAL ESCRITO, AUN CUANDO ULEAD HAYA SIDO INFORMADO DE LA POSIBILIDAD DE TALES DAÑOS.  Algunos estados o jurisdcciones no permiten la exclusión o limitación de daños indicentales, consecuenciales o especiales, para que las limitaciones citadas arriba podrían no ser aplicables para Ud.
+
+6. Misceláneo:
+Este Acuerdo está gobernado por las leyes del Estado de California.  Si alguna provisión de este Acuerdo fuere ilegal, nula, o por alguna razón no implementable, entonces esa provisión será considerada severada de este Acuerdo, y no afectará la validez o ejecución de las provisiones restantes de este Acuerdo.  Este Acuerdo es la declaración completa del acuerdo y sobresee cualquier propuesta o comunicaciones anteriores entre nosotros en relación al tema de este Acuerdo.  Si tiene cualquier preguntas acerca de este Acuerdo, puede contactar a Ulead en una de las direcciones más abajo.
+
+Ulead Systems, Inc.
+Internacional						Norte & Sud América
+10F, No. 45, Tung Hsing Rd.			970 West 190th Street, Suite 520
+Taipei, Taiwan	 110					Torrance, CA 90502, USA
+Tel: +886-2-2764-8599				Tel: +1-310-523-9393
+Fax: +886-2-2764-9599				Fax: +1-310-523-9399
+http://www.ulead.com     			http://www.ulead.com
+
+Japón							Europa
+No.202,TE Building				Wolfenbuetteler Str. 33
+4-5-16,Yohga,Setagaya-ku			38102 Braunschweig
+Tokyo 158-0097,Japan				Germany
+Tel:+81-3-5491-5661				Tel: +49-531-220-7920
+Fax:+81-3-5491-5663				Fax: +49-531-220-7999
+http://www.ulead.co.jp				http://www.ulead.de
