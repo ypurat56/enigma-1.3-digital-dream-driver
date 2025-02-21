@@ -16,4 +16,6 @@ github lfs messed up with big files(.cab), so it breaks if u just download from 
 - Ulead Photo Express 4.0 SE
 - Instruction Manual
 
+The only way I found for it to work, is by using [VirtualBox](https://www.virtualbox.org/) with Windows XP.
+
 ![disc photo](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/blob/main/enigma_1.3_installer.png?raw=true)
