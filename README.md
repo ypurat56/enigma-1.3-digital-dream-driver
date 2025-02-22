@@ -1,7 +1,7 @@
 # enigma-1.3-digital-dream-driver
 enigma 1.3 digital dream camera driver 2002.
 
-![disc photo](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/blob/main/enigma1.3_digital_dream.jpg?raw=true)
+![enigma 1.3 with disc and manual](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/blob/main/enigma1.3_digital_dream.jpg?raw=true)
 #
 Got my hands on this camera, but couldn't find any drivers for it(official site is down), so I found a full complect with official included driver disc.<br />
 Hope it helps some people that still want to use this camera.<br />
@@ -18,4 +18,4 @@ github lfs messed up with big files(.cab), so it breaks if u just download from 
 
 The only way I found for it to work, is by using [VirtualBox](https://www.virtualbox.org/) with Windows XP.
 
-![disc photo](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/blob/main/enigma_1.3_installer.png?raw=true)
+![enigma 1.3 installer](https://github.com/ypurat56/enigma-1.3-digital-dream-driver/blob/main/enigma_1.3_installer.png?raw=true)
